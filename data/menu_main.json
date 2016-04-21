@@ -1,0 +1,35 @@
+{
+    "home": [
+       
+        {
+            "id": 3,
+            "active": true,
+            "title": "Videos",
+            "description": "",
+            "url": "#/videos",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/baseball.jpg",
+                "mp4": "/core/assets/videos/menu/baseball.mp4",
+                "width": 475,
+                "height": 243
+            }
+            }
+        ],
+    "videos": [
+        {
+
+            "id": "baseball",
+            "active": true,
+            "title": "Climate on Steroids",
+            "description": "<p></p>",
+            "url": "#/videos/baseball",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/baseball.jpg",
+                "thumb": "/core/assets/images/menu/baseball-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/baseball.mp4",
+                "width": 475,
+                "height": 243
+            }
+        }
+    ]
+}

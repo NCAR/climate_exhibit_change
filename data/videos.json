@@ -1,0 +1,41 @@
+{
+    "videos": [
+        {
+
+           "id": "baseball",
+            "active": true,
+            "title": "Climate on Steroids",
+            "description": "<p></p>",
+            "url": "#/videos/baseball",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/baseball.jpg",
+                "thumb": "/core/assets/images/menu/baseball-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/baseball.mp4",
+                "width": 900,
+                "height": 500
+            },
+            "sources": [
+                {
+                    "src": "/core/assets/videos/climate/change/baseball.mp4",
+                    "type": "video/mp4"
+                    }
+				],
+            "theme": "/core/bower_components/videogular-themes-default/videogular.css",
+            "plugins": {
+                "poster": "/core/assets/images/posterframes/baseball.jpg",
+                "analytics": {
+                    "category": "Video",
+                    "label": "Baseball",
+                    "events": {
+                        "ready": true,
+                        "play": true,
+                        "pause": true,
+                        "stop": true,
+                        "complete": true,
+                        "progress": 10
+                    }
+                }
+            }
+        }
+    ]
+}
