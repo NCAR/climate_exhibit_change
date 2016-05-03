@@ -18,9 +18,10 @@
             "title": "Videos",
             "description": "",
             "url": "#/videos",
-            "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_change_baseball.jpg",
-                "mp4": "/core/assets/videos/menu/baseball.mp4",
+           "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_change_temperature.jpg",
+                "thumb": "/core/assets/images/menu/climate_change_temperature-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_change_temperature.mp4",
                 "width": 475,
                 "height": 243
             }
@@ -46,7 +47,7 @@
 
             "id": "temperature",
             "active": true,
-            "title": "Projected U.S. Temperature Changes by 2100",
+            "title": "Projected Temperature Changes",
             "description": "<p></p>",
             "url": "#/videos/temperature",
             "placeholder": {
@@ -61,7 +62,7 @@
 
             "id": "precipitation",
             "active": true,
-            "title": "Projected U.S. Precipitation Changes by 2100",
+            "title": "Projected Precipitation Changes",
             "description": "<p></p>",
             "url": "#/videos/precipitation",
             "placeholder": {

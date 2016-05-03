@@ -1,0 +1,19 @@
+/* begin general styles */
+body {
+    background-color:#fff;
+    color:#000;
+}
+.video-description {
+    color:#000;
+}
+.home,
+.videos {
+    background-image: url(/core/assets/images/bkg/climate_change.jpg);
+}
+.vertical-align .row.row_1 {
+    margin-top: 200px;
+}
+.videos .vertical-align .item {
+    margin-top: 0;
+    margin-left:83px;
+}

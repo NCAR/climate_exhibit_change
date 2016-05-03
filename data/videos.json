@@ -41,7 +41,7 @@
 
            "id": "temperature",
             "active": true,
-            "title": "Projected U.S. Temperature Changes by 2100",
+            "title": "Projected Temperature Changes",
             "description": "<p>The average temperature across the continental U.S. could be 8 degrees Fahrenheit warmer by the end of the 21st century under a climate scenario in which concentrations of the greenhouse gas carbon dioxide rise to 800 parts per million. Current concentrations stand at 400 parts per million, and are rising faster than at any time in Earth's history.</p><p><strong>Credit:</strong> NASA's Goddard Space Flight Center</p>",
             "url": "#/videos/temperature",
             "placeholder": {
@@ -78,7 +78,7 @@
 
            "id": "precipitation",
             "active": true,
-            "title": "Projected U.S. Precipitation Changes by 2100",
+            "title": "Projected Precipitation Changes",
             "description": "<p>New visualizations of computer model projections show how precipitation patterns could change across the U.S. in the coming decades under two different carbon dioxide emissions scenarios. The two climate scenarios, based on \"low\" and \"high\" levels of carbon dioxide emissions, highlight results from the draft National Climate Assessment. </p><p><strong>Credit:</strong> NASA's Goddard Space Flight Center</p>",
             "url": "#/videos/precipitation",
             "placeholder": {
