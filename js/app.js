@@ -2,6 +2,7 @@ angular.module("edu.ucar.scied.climatechange", [
     "edu.ucar.scied.controllers", 
     "edu.ucar.scied.controllers.videos",
     "edu.ucar.scied.controllers.climatechange",
+    "edu.ucar.scied.controllers.climatechange.diy_earth",
     "edu.ucar.scied.services",
     "edu.ucar.scied.directives",
     "edu.ucar.scied.filters",
@@ -34,5 +35,9 @@ config(["$routeProvider", function($routeProvider) {
             controller: "playerCtrl"
         }
     ).
+    when("/apps/diy-earth", {
+        templateUrl: "templates/diy_earth.html",
+        controller: "diyEarthCtrl"
+    }).
 	otherwise({redirectTo: '/'});
 }]);

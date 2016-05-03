@@ -8,24 +8,98 @@
             "description": "<p></p>",
             "url": "#/videos/baseball",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/baseball.jpg",
-                "thumb": "/core/assets/images/menu/baseball-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/baseball.mp4",
+                "image": "/core/assets/images/menu/posterframes/climate_change_baseball.jpg",
+                "thumb": "/core/assets/images/menu/climate_change_baseball-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_change_baseball.mp4",
                 "width": 900,
                 "height": 500
             },
             "sources": [
                 {
-                    "src": "/core/assets/videos/climate/change/baseball.mp4",
+                    "src": "/core/assets/videos/climate/change/climate_change_baseball.mp4",
                     "type": "video/mp4"
                     }
 				],
             "theme": "/core/bower_components/videogular-themes-default/videogular.css",
             "plugins": {
-                "poster": "/core/assets/images/posterframes/baseball.jpg",
+                "poster": "/core/assets/images/posterframes/climate_change_baseball.jpg",
                 "analytics": {
                     "category": "Video",
-                    "label": "Baseball",
+                    "label": "baseball",
+                    "events": {
+                        "ready": true,
+                        "play": true,
+                        "pause": true,
+                        "stop": true,
+                        "complete": true,
+                        "progress": 10
+                    }
+                }
+            }
+        },
+         {
+
+           "id": "temperature",
+            "active": true,
+            "title": "Projected U.S. Temperature Changes by 2100",
+            "description": "<p>The average temperature across the continental U.S. could be 8 degrees Fahrenheit warmer by the end of the 21st century under a climate scenario in which concentrations of the greenhouse gas carbon dioxide rise to 800 parts per million. Current concentrations stand at 400 parts per million, and are rising faster than at any time in Earth's history.</p><p><strong>Credit:</strong> NASA's Goddard Space Flight Center</p>",
+            "url": "#/videos/temperature",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_change_temperature.jpg",
+                "thumb": "/core/assets/images/menu/climate_change_temperature-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_change_temperature.mp4",
+                "width": 900,
+                "height": 500
+            },
+            "sources": [
+                {
+                    "src": "/core/assets/videos/climate/change/climate_change_temperature.mp4",
+                    "type": "video/mp4"
+                    }
+				],
+            "theme": "/core/bower_components/videogular-themes-default/videogular.css",
+            "plugins": {
+                "poster": "/core/assets/images/posterframes/climate_change_temperature.jpg",
+                "analytics": {
+                    "category": "Video",
+                    "label": "temperature",
+                    "events": {
+                        "ready": true,
+                        "play": true,
+                        "pause": true,
+                        "stop": true,
+                        "complete": true,
+                        "progress": 10
+                    }
+                }
+            }
+        },
+         {
+
+           "id": "precipitation",
+            "active": true,
+            "title": "Projected U.S. Precipitation Changes by 2100",
+            "description": "<p>New visualizations of computer model projections show how precipitation patterns could change across the U.S. in the coming decades under two different carbon dioxide emissions scenarios. The two climate scenarios, based on \"low\" and \"high\" levels of carbon dioxide emissions, highlight results from the draft National Climate Assessment. </p><p><strong>Credit:</strong> NASA's Goddard Space Flight Center</p>",
+            "url": "#/videos/precipitation",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_change_precipitation.jpg",
+                "thumb": "/core/assets/images/menu/climate_change_precipitation-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_change_precipitation.mp4",
+                "width": 900,
+                "height": 500
+            },
+            "sources": [
+                {
+                    "src": "/core/assets/videos/climate/change/climate_change_precipitation.mp4",
+                    "type": "video/mp4"
+                    }
+				],
+            "theme": "/core/bower_components/videogular-themes-default/videogular.css",
+            "plugins": {
+                "poster": "/core/assets/images/posterframes/climate_change_precipitation.jpg",
+                "analytics": {
+                    "category": "Video",
+                    "label": "precipitation",
                     "events": {
                         "ready": true,
                         "play": true,

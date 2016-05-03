@@ -1,0 +1,704 @@
+{
+    "data": {
+        "diy_temps" : [-160, 14, 18, 28, -130, 57, 58, 64],
+        "diy_temps_c" : [-107, -10, -8, -2, -90, 14, 14, 18],
+        "timeline_inactive_description" : "Each of these factors may play a role in Earth’s climate, but this factor is not considered to be one of the primary driving factors for a temperature difference from the baseline average of the 20<sup>th</sup> century.",
+        "dials_info":"<p style='text-align: left;color: black;margin-left: 1em;margin-right: 1em;'>The climate is controlled by how much sunlight reaches the Earth and how much heat gets trapped in the atmosphere. As the factors that influence sunlight and heat change over time, so does the climate. While past climate changes were natural, today’s climate is greatly influenced by human emissions of heat-trapping gases into the atmosphere.</p> <img ng-if='isInfo' src='/core/assets/apps/diyearth/images/info_balance_graphic.png'/>",
+        "diy_sun": [
+            {
+                "id": 1,
+                "id-game": "young_sun",
+                "icon": "",
+                "active": true,
+                "click": "young_sun",
+                "mode": "diy-sun",
+                "sun_dial": "less",
+                "label": "\"Young\" Sun",
+                "description": "When the Sun was first formed, it was 30% dimmer than it is today. The Sun gets brighter as it ages because of nuclear fusion activity inside of its core, which causes the Sun to emit more energy over time. "
+            },
+            {
+                "id": 2,
+                "id-game": "today_sun",
+                "icon": "",
+                "active": true,
+                "click": "today_sun",
+                "mode": "diy-sun",
+                "sun_dial": "more",
+                "label": "Today’s Sun",
+                "description": "The Sun is brightening by about 1% every hundred million years. On human timescales, its brightness has been about the same, with only much smaller variations (0.1%) that cycle over an average of every 11 years.  The Sun is expected to be around for another 5 billion years, which means eventually it will be more than twice as bright as it is today. "
+            }
+        ],
+        "diy_co2": [
+            {
+                "id": 3,
+                "id-game": "none_co2",
+                "icon": "",
+                "active": true,
+                "click": "none-co2",
+                "mode": "diy-co2",
+                "co2_dial": "none",
+                "label": "None",
+                "description": "What if Earth didn’t have an atmosphere? See what would happen if there were no greenhouse gases (GHGs). GHGs are essential to life on Earth, because without them, the planet would be frozen."
+            },
+            {
+                "id": 4,
+                "id-game": "preindustrial_co2",
+                "icon": "",
+                "active": true,
+                "click": "preindustrial-co2",
+                "mode": "diy-co2",
+                "co2_dial": "less",
+                "label": "Preindustrial",
+                "description": "Before human industry began emitting large amounts of carbon dioxide, there was a natural balance between the yearly amount of CO<sub>2</sub> flowing into the atmosphere and the amount leaving the atmosphere, which kept the levels of CO<sub>2</sub> in the air pretty much constant over time, at around 280 parts per million."
+            },
+            {
+                "id": 5,
+                "id-game": "today_co2",
+                "icon": "",
+                "active": true,
+                "click": "today-co2",
+                "mode": "diy-co2",
+                "co2_dial": "more",
+                "label": "Today",
+                "description": "Carbon dioxide concentrations in the air have reached 400 parts per million for the first time since human civilization. Billions of tons of CO<sub>2</sub> have built up in the air from human activities that use fossil fuels. The oceans absorb around 30% of the added CO<sub>2</sub> in the air, but this also results in ocean acidification and sea level rise from thermal expansion. "
+            },
+            {
+                "id": 6,
+                "id-game": "future_co2",
+                "icon": "",
+                "active": true,
+                "click": "future-co2",
+                "mode": "diy-co2",
+                "co2_dial": "most",
+                "label": "2100",
+                "description": "Because carbon dioxide can remain in the atmosphere for centuries, a large amount of the CO<sub>2</sub> we’ve already emitted will still remain in the air in the year 2100, even if we completely stop emissions tomorrow. If we don’t take any action to cut emissions, CO<sub>2</sub> concentrations may rise to triple the amount we have in the air today."
+            }
+        ],
+        "timeline_data": [
+            {
+                "id": 13,
+                "id-game": "timeline-data",
+                "icon": "timeline_dot",
+                "label": "635 million years ago",
+                "title": "Snowball Earth",
+                "left_margin":"5%",
+                "left_arrow" : "firstPos",
+                "percentage_width": "22.5%",
+                "period_width": "404px",
+                "hasCompressor":true,
+                "description": "One of the coldest periods in Earth's history is often referred to as \"Snowball Earth\". The planet was very frigid and much of the ocean was frozen. Although the continents were in different positions than today, glaciers over a mile thick covered much of the land and extended to the equator.",
+                "sun_dial": "less",
+                "co2_dial": "less",
+                "earth_image": "1",
+                "temperature": "-70",
+                "temperature_c": "-57",
+                "buttons": {
+                    "timeline_sun": [
+                        {
+                            "id": 106,
+                            "id-game": "timeline_sun1",
+                            "icon": "brightness",
+                            "active": true,
+                            "click": "timeline-sun-brightness",
+                            "mode": "timeline-sun",
+                            "label": "Sun Brightness",
+                            "description": "The energy emitted by the Sun affects climate on Earth. Hundreds of million years ago, the solar energy was weaker than it is today. The overall energy output from this younger Sun during Snowball Earth was about 6% less than it is today."
+                        },
+                        {
+                            "id": 107,
+                            "id-game": "timeline_sun2",
+                            "icon": "orbit",
+                            "active": false,
+                            "click": "timeline-sun-orbit",
+                            "mode": "timeline-sun",
+                            "label": "Earth's Orbit",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 108,
+                            "id-game": "timeline_sun3",
+                            "icon": "reflectivity",
+                            "active": true,
+                            "click": "timeline-sun-reflectivity",
+                            "mode": "timeline-sun",
+                            "label": "Earth Reflectivity",
+                            "description": "More heat escaped to space because carbon dioxide concentrations were low, which caused Earth to freeze. Snow- and ice-covered surfaces reflect sunlight back out to space, so as ice spread over the Earth, the Earth cooled even more."
+                        }
+                    ],
+                    "timeline_co2": [
+                        {
+                            "id": 109,
+                            "id-game": "timeline_co21",
+                            "icon": "geography",
+                            "active": true,
+                            "click": "timeline-sun-geography",
+                            "mode": "timeline-co2",
+                            "label": "Land",
+                            "description": "The locations and shapes of the continents were very different than they are today. Most of the land was located near the equator. Before the land was frozen over, the rocks were continuously weathered, a process that takes CO<sub>2</sub> out of the atmosphere. Eventually, the cooling Earth froze over and kept the CO<sub>2</sub> trapped in ice."
+                        },
+                        {
+                            "id": 112,
+                            "id-game": "timeline_co23",
+                            "icon": "plants",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Plants",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 110,
+                            "id-game": "timeline_co22",
+                            "icon": "oceans",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Oceans",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 111,
+                            "id-game": "timeline_co23",
+                            "icon": "ice",
+                            "active": true,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Ice",
+                            "description": "Ice was prominent during Snowball Earth. Eventually the entire ocean froze. Then when the land froze, weathering ceased, which allowed CO<sub>2</sub> to build up again in the atmosphere. After about ten million years, the ice began to melt."
+                        },
+                        {
+                            "id": 113,
+                            "id-game": "timeline_co24",
+                            "icon": "humans",
+                            "active": false,
+                            "click": "timeline-sun-humans",
+                            "mode": "timeline-co2",
+                            "label": "Humans",
+                            "description": "N/A"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 14,
+                "id-game": "timeline-data",
+                "icon": "timeline_dot",
+                "label": "100 million years ago",
+                "left_margin":"10%",
+                "left_arrow" : "secondPos",
+                "percentage_width": "19.5%",
+                "period_width": "347px",
+                "hasCompressor":true,
+                "title": "Age of the Dinosaurs",
+                "description": "Dinosaurs roamed the Earth during a warmer and wetter Cretaceous era. CO<sub>2</sub> levels were 4 times higher than preindustrial times, sea level was over 200 feet higher than today, and ecosystems flourished before the mass extinction 65 million years ago. Forests even reached the ice-free poles, which were considerably warmer than today’s. ",
+                "sun_dial": "less",
+                "co2_dial": "most",
+                "earth_image": "2",
+                "temperature": "75",
+                "temperature_c": "24",
+                "buttons": {
+                    "timeline_sun": [
+                        {
+                            "id": 206,
+                            "id-game": "timeline_sun1",
+                            "icon": "brightness",
+                            "active": true,
+                            "click": "timeline-sun-brightness",
+                            "mode": "timeline-sun",
+                            "label": "Sun Brightness",
+                            "description": "The energy emitted by the Sun affects climate on Earth. The Sun gets brighter over time. During the Age of the Dinosaurs, it was 1% dimmer than it is today."
+                        },
+                        {
+                            "id": 207,
+                            "id-game": "timeline_sun2",
+                            "icon": "orbit",
+                            "active": false,
+                            "click": "timeline-sun-orbit",
+                            "mode": "timeline-sun",
+                            "label": "Earth's Orbit",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 208,
+                            "id-game": "timeline_sun3",
+                            "icon": "reflectivity",
+                            "active": true,
+                            "click": "timeline-sun-airsealand",
+                            "mode": "timeline-sun",
+                            "label": "Earth Reflectivity",
+                            "description": "During this period, the polar regions were much warmer than today. No ice sheets at the poles meant that Earth absorbed more of the incoming sunlight. Much of the land was covered by forests."
+                        }
+                    ],
+                    "timeline_co2": [
+                        {
+                            "id": 209,
+                            "id-game": "timeline_co21",
+                            "icon": "geography",
+                            "active": true,
+                            "click": "timeline-sun-geography",
+                            "mode": "timeline-co2",
+                            "label": "Land",
+                            "description": "During the Age of the Dinosaurs, the continents were moving towards their present positions. Volcanic eruptions, on land and in the ocean, spewed huge amounts of greenhouse gases into the air, which increased CO<sub>2</sub> levels, trapping heat in the atmosphere."
+                        },
+                        {
+                            "id": 212,
+                            "id-game": "timeline_co23",
+                            "icon": "plants",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Plants",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 210,
+                            "id-game": "timeline_co23",
+                            "icon": "oceans",
+                            "active": true,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Oceans",
+                            "description": "Sea level was higher during this period by several hundred feet. In fact, the area to the east of NCAR in Boulder, and extending over the entire center of North America, was a shallow ocean reaching to the Gulf of Mexico."
+                        },
+                        {
+                            "id": 211,
+                            "id-game": "timeline_co23",
+                            "icon": "ice",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Ice",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 213,
+                            "id-game": "timeline_co24",
+                            "icon": "humans",
+                            "active": false,
+                            "click": "timeline-sun-humans",
+                            "mode": "timeline-co2",
+                            "label": "Humans",
+                            "description": "N/A"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 15,
+                "id-game": "timeline-data",
+                "icon": "timeline_dot",
+                "label": "21 thousand years ago",
+                "left_margin":"14%",
+                "left_arrow" : "thirdPos",
+                "percentage_width": "16.7%",
+                "period_width": "292px",
+                "hasCompressor":true,
+                "title": "Last Ice Age",
+                "description": "Glaciers and ice sheets during the Last Ice Age were greater in number and size than today. Thick ice, over a mile thick, covered most of northern North America, Europe, and Asia. The climate was cooler and more arid than today.",
+                "sun_dial": "less",
+                "co2_dial": "less",
+                "earth_image": "3",
+                "temperature": "50",
+                "temperature_c": "10",
+                "buttons": {
+                    "timeline_sun": [
+                        {
+                            "id": 306,
+                            "id-game": "timeline_sun1",
+                            "icon": "brightness",
+                            "active": false,
+                            "click": "timeline-sun-brightness",
+                            "mode": "timeline-sun",
+                            "label": "Sun Brightness",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 307,
+                            "id-game": "timeline_sun2",
+                            "icon": "orbit",
+                            "active": true,
+                            "click": "timeline-sun-orbit",
+                            "mode": "timeline-sun",
+                            "label": "Earth's Orbit",
+                            "description": "The shape of Earth's orbit around the Sun changes over time, as does the tilt and wobble of its axis. During the Last Ice Age, also called the Last Glacial Maximum, the orbit and tilt were aligned such that there was less sunlight reaching high latitudes during summer, which caused cooler temperatures and allowed ice to build up."
+                        },
+                        {
+                            "id": 308,
+                            "id-game": "timeline_sun3",
+                            "icon": "reflectivity",
+                            "active": true,
+                            "click": "timeline-sun-airsealand",
+                            "mode": "timeline-sun",
+                            "label": "Earth Reflectivity",
+                            "description": "Extensive ice cover during this period caused most of the incoming sunlight to be reflected, which made temperatures even colder. Ice can reflect from 55 to 80% of incoming sunlight, while oceans reflect only about 12%. "
+                        }
+                    ],
+                    "timeline_co2": [
+                        {
+                            "id": 309,
+                            "id-game": "timeline_co21",
+                            "icon": "geography",
+                            "active": false,
+                            "click": "timeline-sun-geography",
+                            "mode": "timeline-co2",
+                            "label": "Land",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 312,
+                            "id-game": "timeline_co23",
+                            "icon": "plants",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Plants",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 310,
+                            "id-game": "timeline_co23",
+                            "icon": "oceans",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Oceans",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 311,
+                            "id-game": "timeline_co23",
+                            "icon": "ice",
+                            "active": true,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Ice",
+                            "description": "Ice caused cooling by trapping CO<sub>2</sub> in ocean water. Sea ice in the ocean around Antarctica prevented CO<sub>2</sub> dissolved in the water from getting out into the atmosphere. Because there was so much water trapped as ice, sea level was much lower too, up to 100 meters lower than it is today."
+                        },
+                        {
+                            "id": 313,
+                            "id-game": "timeline_co24",
+                            "icon": "humans",
+                            "active": false,
+                            "click": "timeline-sun-humans",
+                            "mode": "timeline-co2",
+                            "label": "Humans",
+                            "description": "N/A"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 16,
+                "id-game": "timeline-data",
+                "icon": "timeline_dot",
+                "label": "1900",
+                "title": "Early Industrial Era",
+                "left_margin":"19%",
+                "left_arrow" : "forthPos",
+                "percentage_width": "18%",
+                "period_width": "100%",
+                "hasCompressor":false,
+                "description": "The Industrial Revolution, which began around 1750, resulted in more greenhouse gases in the air due to an increase in burning coal for heat, manufacturing, steam engines, and power plants. With continued industrialization and greater emissions released into the air, the temperature began to rise by mid-20<sup>th</sup> century.",
+                "sun_dial": "more",
+                "co2_dial": "less",
+                "earth_image": "4",
+                "temperature": "57",
+                "temperature_c": "13.9",
+                "buttons": {
+                    "timeline_sun": [
+                        {
+                            "id": 406,
+                            "id-game": "timeline_sun1",
+                            "icon": "brightness",
+                            "active": false,
+                            "click": "timeline-sun-brightness",
+                            "mode": "timeline-sun",
+                            "label": "Sun Brightness",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 407,
+                            "id-game": "timeline_sun2",
+                            "icon": "orbit",
+                            "active": false,
+                            "click": "timeline-sun-orbit",
+                            "mode": "timeline-sun",
+                            "label": "Earth's Orbit",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 408,
+                            "id-game": "timeline_sun3",
+                            "icon": "reflectivity",
+                            "active": true,
+                            "click": "timeline-sun-airsealand",
+                            "mode": "timeline-sun",
+                            "label": "Earth Reflectivity",
+                            "description": "1900 was cooler than the 20<sup>th</sup> century average baseline because many countries were only in the early stages of industrial development, and therefore there were less greenhouse gases in the atmosphere than in the mid-1900s."
+                        }
+                    ],
+                    "timeline_co2": [
+                        {
+                            "id": 409,
+                            "id-game": "timeline_co21",
+                            "icon": "geography",
+                            "active": false,
+                            "click": "timeline-sun-geography",
+                            "mode": "timeline-co2",
+                            "label": "Land",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 412,
+                            "id-game": "timeline_co23",
+                            "icon": "plants",
+                            "active": true,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Plants",
+                            "description": "The natural life on Earth, meaning all the plants and animals, plays an important role in the global carbon cycle. Vegetation uses a significant amount of CO<sub>2</sub> from the air to perform photosynthesis. As humans built civilizations, they changed the landscape by cutting down trees. As more trees were cut, CO<sub>2</sub> levels rose. "
+                        },
+                        {
+                            "id": 410,
+                            "id-game": "timeline_co23",
+                            "icon": "oceans",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Oceans",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 411,
+                            "id-game": "timeline_co23",
+                            "icon": "ice",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Ice",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 413,
+                            "id-game": "timeline_co24",
+                            "icon": "humans",
+                            "active": true,
+                            "click": "timeline-sun-humans",
+                            "mode": "timeline-co2",
+                            "label": "Humans",
+                            "description": "The introduction and spread of fossil fuels during the Industrial Revolution meant that humans began releasing greater and greater amounts of greenhouse gases into the atmosphere. By the mid-19<sup>th</sup> century, the steam engine, electric power lines, railways, and the internal combustion engine were widespread in the Northern Hemisphere."
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 17,
+                "id-game": "timeline-data",
+                "icon": "timeline_dot",
+                "label": "2000",
+                "title": "Present Day",
+                "left_margin":"31%",
+                "left_arrow" : "fifthPos",
+                "percentage_width": "13%",
+                "period_width": "100%",
+                "hasCompressor":false,
+                "description": "By 2000, the rise of fossil fuel production resulted in high amounts of greenhouse gases in the atmosphere and the beginning of the warmest years on record for the modern era. Over the past 100 years, the average surface temperature of the Earth had risen by about 1.5 degrees Fahrenheit (0.8 degrees Celsius).",
+                "sun_dial": "more",
+                "co2_dial": "more",
+                "earth_image": "5",
+                "temperature": "58",
+                "temperature_c": "14.4",
+                "buttons": {
+                    "timeline_sun": [
+                        {
+                            "id": 506,
+                            "id-game": "timeline_sun1",
+                            "icon": "brightness",
+                            "active": false,
+                            "click": "timeline-sun-brightness",
+                            "mode": "timeline-sun",
+                            "label": "Sun Brightness",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 507,
+                            "id-game": "timeline_sun2",
+                            "icon": "orbit",
+                            "active": false,
+                            "click": "timeline-sun-orbit",
+                            "mode": "timeline-sun",
+                            "label": "Earth's Orbit",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 508,
+                            "id-game": "timeline_sun3",
+                            "icon": "reflectivity",
+                            "active": true,
+                            "click": "timeline-sun-airsealand",
+                            "mode": "timeline-sun",
+                            "label": "Earth Reflectivity",
+                            "description": "Keeping Earth's energy budget in balance means that there should be an equal amount of energy coming in as is leaving. Incoming energy is both absorbed and reflected by clouds, gases, land, and water. Glaciers and ice sheets have helped to balance the incoming sunlight by reflecting a high amount. This is called ice albedo. However, with higher temperatures and less glacier cover, more energy is absorbed by Earth. "
+                        }
+                    ],
+                    "timeline_co2": [
+                        {
+                            "id": 509,
+                            "id-game": "timeline_co21",
+                            "icon": "geography",
+                            "active": false,
+                            "click": "timeline-sun-geography",
+                            "mode": "timeline-co2",
+                            "label": "Land",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 512,
+                            "id-game": "timeline_co23",
+                            "icon": "plants",
+                            "active": true,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Plants",
+                            "description": "Deforestation is reducing the amount of forests that absorb carbon dioxide from the atmosphere. Natural life on Earth is also changing with warming temperatures. Spring is now occurring earlier and some plant and animal interactions and migrations are out of sync."
+                        },
+                        {
+                            "id": 510,
+                            "id-game": "timeline_co23",
+                            "icon": "oceans",
+                            "active": true,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Oceans",
+                            "description": "Excess greenhouse gases in the air are causing an imbalance in the Earth’s energy budget. As a result, the global ocean is acting like a \"heat bucket\" and absorbing the excess heat and CO<sub>2</sub> from the air. Unfortunately, the ocean is becoming warmer and more acidic, which affects marine life and causes coral reefs to lose their vibrant colors. Sea level is rising from melting ice and warm water expanding."
+                        },
+                        {
+                            "id": 511,
+                            "id-game": "timeline_co23",
+                            "icon": "ice",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Ice",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 513,
+                            "id-game": "timeline_co24",
+                            "icon": "humans",
+                            "active": true,
+                            "click": "timeline-sun-humans",
+                            "mode": "timeline-co2",
+                            "label": "Humans",
+                            "description": "Humans are emitting greenhouse gases into the air more than ever before. The global average concentrations of CO<sub>2</sub> in the atmosphere have risen by 40% since the start of the Industrial Era, while methane rose 150%, and nitrous oxide 20%. By 2015, the global CO<sub>2</sub> concentration reached 400 parts per million."
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 18,
+                "id-game": "timeline-data",
+                "icon": "timeline_dot",
+                "label": "2100",
+                "percentage_width": "9.6%",
+                "period_width": "107%",
+                "left_margin":"39%",
+                "left_arrow" : "sixthPos",
+                "hasCompressor":false,
+                "title": "Future Climate",
+                "description": "The climate in 2100 depends on us. If humans continue to produce high emissions, then there will be billions of tons of greenhouse gases in the air that will raise the temperature of the Earth by several degrees. There will be much less ice and snow cover and sea levels may rise several feet higher.",
+                "sun_dial": "more",
+                "co2_dial": "most",
+                "earth_image": "6",
+                "temperature": "65",
+                "temperature_c": "18",
+                "buttons": {
+                    "timeline_sun": [
+                        {
+                            "id": 606,
+                            "id-game": "timeline_sun1",
+                            "icon": "brightness",
+                            "active": false,
+                            "click": "timeline-sun-brightness",
+                            "mode": "timeline-sun",
+                            "label": "Sun Brightness",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 607,
+                            "id-game": "timeline_sun2",
+                            "icon": "orbit",
+                            "active": false,
+                            "click": "timeline-sun-orbit",
+                            "mode": "timeline-sun",
+                            "label": "Earth's Orbit",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 608,
+                            "id-game": "timeline_sun3",
+                            "icon": "reflectivity",
+                            "active": true,
+                            "click": "timeline-sun-airsealand",
+                            "mode": "timeline-sun",
+                            "label": "Earth Reflectivity",
+                            "description": "A continued warming of the global climate system is expected given the large number of human activities that release greenhouse gases into the air. Along with this warming is an expected decrease in glaciers, sea ice, and snow cover around the globe. Continued loss of ice will result in more absorption of sunlight. "
+                        }
+                    ],
+                    "timeline_co2": [
+                        {
+                            "id": 609,
+                            "id-game": "timeline_co21",
+                            "icon": "geography",
+                            "active": false,
+                            "click": "timeline-sun-geography",
+                            "mode": "timeline-co2",
+                            "label": "Land",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 612,
+                            "id-game": "timeline_co23",
+                            "icon": "plants",
+                            "active": false,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Plants",
+                            "description": "N/A"
+                        },
+                        {
+                            "id": 610,
+                            "id-game": "timeline_co23",
+                            "icon": "oceans",
+                            "active": true,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Oceans",
+                            "description": "The ocean plays an important role in climate. It takes in around 30% of the extra carbon dioxide (CO<sub>2</sub>) emissions from the atmosphere. As emissions rise, the ocean may double its intake of CO<sub>2</sub> by 2100. This will result in the ocean becoming more acidic - a threat to important marine ecosystems. As the ocean continues to warm, it also expands, causing sea level rise."
+                        },
+                        {
+                            "id": 611,
+                            "id-game": "timeline_co23",
+                            "icon": "ice",
+                            "active": true,
+                            "click": "timeline-sun-water",
+                            "mode": "timeline-co2",
+                            "label": "Ice",
+                            "description": "Snow and ice cover are likely to continue to decrease by 2100. Ice sheets will lose mass and become much thinner. Sea ice in the Arctic is also expected to be absent during the summer months. Continued melting ice means that more freshwater will enter the ocean and affect sea level rise and ocean circulation patterns."
+                        },
+                        {
+                            "id": 613,
+                            "id-game": "timeline_co24",
+                            "icon": "humans",
+                            "active": true,
+                            "click": "timeline-sun-humans",
+                            "mode": "timeline-co2",
+                            "label": "Humans",
+                            "description": "Human activities will determine how much the global temperature will rise. Depending on how much we rely on fossil fuels in the future, the carbon dioxide levels may be at least 420 parts per million to over 900 parts per million by 2100. The global temperature could rise by 0.5 to 8.6 degrees F (0.3 to 4.8 degrees C) over the next century."
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

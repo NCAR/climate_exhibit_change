@@ -1,0 +1,126 @@
+<div id="diy-earth" class="container-fluid" style="margin-left:-15px">
+    <div id="background_holder"></div>
+    <div class="row">
+        <div class="col-md-4"><h1 id="app_header-image">Climate Explorer</h1></div>
+        
+        <div id="intro_text" class="col-md-5">
+            <span ng-if="isTimelineMode">Our climate has changed dramatically over the course of the Earth’s 4.5 billion year history. Pick a spot on the timeline to see what temperatures were like in the past and may be in the future. Find out why temperatures are different from the 20<sup>th</sup> century average.</span>
+            <span ng-if="!isTimelineMode">Create your own climate! As we see in the timeline activity, climate is controlled by a balance between 1) sunlight and 2) greenhouse gases, which trap heat. Select different levels of sunlight and greenhouse gases to see how these variables affect the temperature.</span>
+        </div>
+        <div id="timeline-switch" class="col-md-3">
+            <button class="btn no-button-looks" ng-click="toggleMode()" ng-class="{'toggle_diy':(!isTimelineMode), 'toggle_timeline': (isTimelineMode)}"></button>
+        </div>    
+    </div>
+
+    <div class="row">
+        <div id="earth-side" class="col-md-7">
+            <div id="earth-legend-vert" class="col-md-1" style="width: 7em;">
+                <span class="row">Warmest Ever</span>
+                <img id="earth-temp-legend" src="/core/assets/apps/diyearth/images/temp_scale_avg.png" class="temp_scale"/>
+                <span class="row">Coolest Ever</span>
+                
+                <div id="temp-gauge-vert" ng-class="{'diy':!isTimelineMode}">
+                    <span>Global Temperature</span>
+                    <div id="temps" ng-if="isTimelineMode"><div class="temp">{{earthTemp}}&deg; F</div><div class="temp" >{{earthTemp_C}}&deg; C</div></div>
+                    <div id="temps" ng-if="!isTimelineMode"><div class="temp">{{diy_earthTemp}}&deg; F</div><div class="temp" >{{diy_earthTemp_C}}&deg; C</div></div>
+                </div>
+            </div>
+            
+            <div id="earth-vert" class="col-md-11">
+                <img id="earth-img" ng-if="isTimelineMode" ng-src="/core/assets/apps/diyearth/images/timeline_earth{{selectedPeriod.earth_image}}.png" class="img-responsive" spinner-on-load/>
+                 <img id="earth-img" ng-if="!isTimelineMode" ng-src="/core/assets/apps/diyearth/images/diy_earth{{earthNumber}}.png" class="img-responsive" spinner-on-load/>
+                
+            </div>
+        </div>
+        <div id="dials-side" class="col-md-5">
+            <div id="dials-left" class="col-md-5">
+                <div class="row dial-title">
+                    Incoming Sunlight
+                </div>
+                <div class="row dial">
+                    <div style="margin-left: 1.8em;"><img src="/core/assets/apps/diyearth/images/meter_dial2.png" class="img-responsive"/></div>
+                    <div class="sun-dial {{diy_sun_dial}}" style="margin-left: 4em;" ng-if="!isTimelineMode"></div>
+                    <div class="sun-dial {{selectedPeriod.sun_dial}}" style="margin-left: 4.2em;" ng-if="isTimelineMode"></div>
+                </div>
+                <div class="row factors" ng-if="!isTimelineMode">
+                    <div ng-repeat="aFactor in data.diy_sun" >
+                        <button class="factor" ng-click="select(aFactor)" ng-class="{'selected': (aFactor.isSelected)}" ng-bind-html="aFactor.label | unsafe"></button>
+                        <div class="row text" ng-if="aFactor.isSelected" ng-bind-html="aFactor.description | unsafe"></div>
+                    </div>
+                </div>
+                <div class="row factors timeline" ng-if="isTimelineMode">
+                    <button ng-repeat="aFactor in selectedPeriod.buttons.timeline_sun" class="row btn no-button-looks" ng-click="select(aFactor)" ng-class="{'selected': (aFactor.isSelected), 'inactive':(!aFactor.active)}">
+                        <img ng-if="aFactor.active" class="btn img-responsive factor-btn" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_active.png" spinner-on-load/>
+                        <img ng-if="aFactor.isSelected && aFactor.active" class="btn img-responsive factor-btn selected" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_select.png" spinner-on-load/>
+                        <img ng-if="!aFactor.active" class="btn img-responsive factor-btn inactive" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_inactive.png" spinner-on-load/>  <!-- disabled="true" -->
+                    <span ng-bind-html="aFactor.label | unsafe"></span></button>                  
+                </div>
+
+            </div>
+
+            <div id="info-col" class="col-md-1">
+                <button class="btn no-button-looks info" ng-click="showInfo()" ng-class="{'selected':(isInfo && showPopup)}"></button>
+            </div>
+
+            <div id="dials-right" class="col-md-5">
+                <div class="row dial-title">
+                    Trapped Heat
+                </div>
+                <div class="row dial">
+                    <div style="margin-left: 2em;"><img src="/core/assets/apps/diyearth/images/meter_dial3.png" class="img-responsive"/></div>
+                    <div style="margin-left: 4em;" class="co2-dial {{diy_co2_dial}}" ng-if="!isTimelineMode"></div>
+                    <div style="margin-left: 4.2em;" class="co2-dial {{selectedPeriod.co2_dial}}" ng-if="isTimelineMode"></div>
+                </div>
+                
+                <div class="row factors" ng-if="!isTimelineMode" style="padding-top: 0.1em;">
+                    <div ng-repeat="aFactor in data.diy_co2">
+                        <button class="factor" ng-click="select(aFactor)" ng-class="{'selected': (aFactor.isSelected)}" ng-bind-html="aFactor.label | unsafe">
+                        </button>
+                        <div class="row text co2" ng-if="aFactor.isSelected" ng-bind-html="aFactor.description | unsafe"></div>
+                    </div>
+                </div>
+                <div class="row factors timeline" ng-if="isTimelineMode">
+                    <button ng-repeat="aFactor in selectedPeriod.buttons.timeline_co2" class="row btn no-button-looks {{aFactor.icon}}" ng-click="select(aFactor)" ng-class="{'selected': (aFactor.isSelected), 'inactive':(!aFactor.active)}">
+                        <img ng-if="aFactor.active" class="btn img-responsive factor-btn" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_active.png" spinner-on-load/>
+                        <img ng-if="aFactor.isSelected && aFactor.active" class="btn img-responsive factor-btn selected" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_select.png" spinner-on-load/>
+                        <img ng-if="!aFactor.active" class="btn img-responsive factor-btn inactive" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_inactive.png" spinner-on-load/>
+                    <span ng-bind-html="aFactor.label | unsafe"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" ng-if="isTimelineMode" style="position:relative;margin-top: 20px;">
+        <div id="diy-timeline-area" ng-if="aPeriodIsSelected" class="col-md-12">
+            <div id="diy-timeline-period"  class="{{selectedPeriod.left_arrow}}" style="margin-left:{{selectedPeriod.left_margin}}">
+                <h3>{{selectedPeriod.title}}</h3>
+                <div ng-bind-html="selectedPeriod.description | unsafe"></div>
+            </div>
+        </div>
+        <div id="diy-timeline" class="col-md-12" >
+                <div class="timeline-line" ng-repeat="aTimelineDot in timelineData" style="width:{{aTimelineDot.percentage_width}}">
+                    <div class="timeline-dot" style="width:{{aTimelineDot.period_width}}" ng-click="selectPeriod(aTimelineDot)">
+                        <div class="timeline-dot-circle" ng-class="{'selected':(aTimelineDot == selectedPeriod)}"></div>
+                        <h3 ng-bind-html="aTimelineDot.label | unsafe"></h3>
+                    </div>
+                    <div class="timeline-compressor" ng-if="aTimelineDot.hasCompressor"></div>
+                </div>
+        </div>
+    </div>
+
+    <div id="diy-popup" ng-click="closePopup()" aria-hidden="true" aria-live="polite" aria-atomic="true" aria-relevant="text,additions,deletions" ng-if="showPopup">
+        <div class="diy-popup-container" ng-class="{'info':isInfo}">
+            <div class="diy-popup-title"><h3>{{popupTitle}}</h3></div>
+            <div class="diy-popup-content"  ng-bind-html="popupContent | unsafe">
+            </div>
+            <button class="close" ng-click="closePopup()">x</button>    
+        </div>
+    </div>
+
+    <!--Spinner-->
+    <div id="loading" aria-hidden="true" >
+        <div class="spinner"></div>
+    </div>
+</div>
+
+<ml-exhibits-footer-menu ng-if="showFooter" pagetitle="pagetitle" back-button-text="backButtonText" back-button="backButton" back-page="backPage"></ml-exhibits-footer-menu>

@@ -1,14 +1,25 @@
 {
     "home": [
-       
         {
-            "id": 3,
+            "id": 1,
+            "active": true,
+            "title": "DIY EARTH",
+            "description": "DESCR HERE",
+            "url": "#/apps/diy-earth",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_change_diyearth.jpg",
+                "width":476,
+                "height":244
+            }
+        },
+        {
+            "id": 2,
             "active": true,
             "title": "Videos",
             "description": "",
             "url": "#/videos",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/baseball.jpg",
+                "image": "/core/assets/images/menu/posterframes/climate_change_baseball.jpg",
                 "mp4": "/core/assets/videos/menu/baseball.mp4",
                 "width": 475,
                 "height": 243
@@ -24,9 +35,39 @@
             "description": "<p></p>",
             "url": "#/videos/baseball",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/baseball.jpg",
-                "thumb": "/core/assets/images/menu/baseball-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/baseball.mp4",
+                "image": "/core/assets/images/menu/posterframes/climate_change_baseball.jpg",
+                "thumb": "/core/assets/images/menu/climate_change_baseball-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_change_baseball.mp4",
+                "width": 475,
+                "height": 243
+            }
+        },
+         {
+
+            "id": "temperature",
+            "active": true,
+            "title": "Projected U.S. Temperature Changes by 2100",
+            "description": "<p></p>",
+            "url": "#/videos/temperature",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_change_temperature.jpg",
+                "thumb": "/core/assets/images/menu/climate_change_temperature-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_change_temperature.mp4",
+                "width": 475,
+                "height": 243
+            }
+        },
+         {
+
+            "id": "precipitation",
+            "active": true,
+            "title": "Projected U.S. Precipitation Changes by 2100",
+            "description": "<p></p>",
+            "url": "#/videos/precipitation",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_change_precipitation.jpg",
+                "thumb": "/core/assets/images/menu/climate_change_precipitation-thumb.jpg",
+                "mp4": "/core/assets/videos/menu/climate_change_precipitation.mp4",
                 "width": 475,
                 "height": 243
             }
