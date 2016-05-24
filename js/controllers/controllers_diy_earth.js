@@ -15,36 +15,38 @@
         $scope.selectedPeriod = {};
         $scope.diy_sun_dial = 'none';
         $scope.diy_co2_dial = 'none';
-
         $scope.diy_combos = [];
         $scope.diy_combos_C = [];
         $scope.diy_sun_index = 1;
         $scope.diy_co2_index = 2;
-
         $scope.earthNumber = 0;
         $scope.diy_earthTemp = -1; //'--'; // indicator that this hasn't been set before ... triggers default
         $scope.diy_earthTemp_C = -1; //'--'; // indicator that this hasn't been set before ... triggers default
         $scope.earthTemp = '--';
         $scope.earthTemp_C = '--';
         $scope.inactiveDescription = "";
-
         $scope.isInfo = false;
-
-        //$scope.showSpinner = false;
-
-
         var selectedFactor = null;
-        ContentData('data/climateExplore/climate_explore.json')
-            .success(function (list) {
-                $scope.data = list['data'];
-                $scope.timelineData = $scope.data.timeline_data;
-                $scope.selectPeriod($scope.timelineData[4]);
-                $scope.diy_combos = $scope.data.diy_temps;
-                $scope.diy_combos_C = $scope.data.diy_temps_c;
-                $scope.inactiveDescription = $scope.data.timeline_inactive_description;
-            });
+        $scope.showInfo = showInfoFunc;
+        $scope.closePopup = closePopupFunc;
+        $scope.toggleMode = toggleModeFunc;
+        $scope.selectPeriod = selectPeriodFunc;
+        $scope.select = selectFunc;
 
-        $scope.showInfo = function () {
+        ContentData('data/climateExplore/climate_explore.json')
+            .success(processData);
+
+        function processData(list) {
+            $scope.data = list['data'];
+            $scope.timelineData = $scope.data.timeline_data;
+            $scope.selectPeriod($scope.timelineData[4]);
+            $scope.diy_combos = $scope.data.diy_temps;
+            $scope.diy_combos_C = $scope.data.diy_temps_c;
+            $scope.inactiveDescription = $scope.data.timeline_inactive_description;
+        }
+
+
+        function showInfoFunc() {
 
             $scope.popupTitle = 'Incoming Sunlight & Trapped Heat';
             $scope.popupContent = $scope.data.dials_info;
@@ -52,7 +54,7 @@
             $scope.showPopup = true;
         }
 
-        $scope.closePopup = function () {
+        function closePopupFunc() {
             $scope.showPopup = false;
             if ($scope.isInfo)
                 $scope.isInfo = false;
@@ -64,7 +66,7 @@
             }
         }
 
-        $scope.toggleMode = function () {
+        function toggleModeFunc() {
             $scope.isTimelineMode = !$scope.isTimelineMode;
             if ((!$scope.isTimelineMode) && ($scope.diy_earthTemp == -1)) {
                 $scope.select($scope.data.diy_sun[1]);
@@ -72,14 +74,17 @@
             }
         }
 
-        $scope.selectPeriod = function (aPeriod) {
+
+        function selectPeriodFunc(aPeriod) {
             $scope.selectedPeriod = aPeriod;
             $scope.earthTemp = aPeriod.temperature;
             $scope.earthTemp_C = aPeriod.temperature_c;
             $scope.aPeriodIsSelected = true;
         }
 
-        $scope.select = function (aFactor) {
+
+
+        function selectFunc(aFactor) {
             $scope.isInfo = false; //not an info popup, don't show the image
 
             if (!aFactor.active) {
