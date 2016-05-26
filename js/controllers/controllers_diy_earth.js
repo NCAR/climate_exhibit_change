@@ -3,11 +3,11 @@
     angular.module('edu.ucar.scied.controllers.climatechange.diy_earth', [])
         .controller('diyEarthCtrl', diyEarthCtrl);
 
-    function diyEarthCtrl($rootScope, $scope, ContentData) {
+    function diyEarthCtrl($rootScope, $scope, ContentData,Footer) {
         $rootScope.showFooter = true;
-        $scope.backButton = false;
+        Footer.setBackButton(false);
         $rootScope.bodylayout = 'home';
-        $scope.pagetitle = "Climate Explorer";
+        Footer.setPageTitle("Climate Explorer");
         $scope.isTimelineMode = true;
         $scope.showPopup = false;
         /*Timeline*/
