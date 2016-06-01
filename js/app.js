@@ -6,6 +6,7 @@
     "edu.ucar.scied.controllers.climatechange",
     "edu.ucar.scied.controllers.climatechange.diy_earth",
     "edu.ucar.scied.services",
+    "edu.ucar.scied.services.webapp",
     "edu.ucar.scied.services.footer",
     "edu.ucar.scied.directives.footer",
     "edu.ucar.scied.filters",
