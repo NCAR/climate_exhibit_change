@@ -1,10 +1,11 @@
 (function () {
     'use strict';
-    angular.module('edu.ucar.scied.controllers.climatechange', [])
+    angular.module('edu.ucar.scied.climatechange.controller', [])
         .controller('homeCtrl', homeCtrl)
         .controller('videosCtrl', videosCtrl)
         .controller('playerCtrl', playerCtrl);
 
+    homeCtrl.$inject = ['WebApp'];
     function homeCtrl(WebApp) {
         WebApp.setShowFooter(false);
         WebApp.setBodyLayout('home');
@@ -13,7 +14,8 @@
         WebApp.setDataSource('data/menu_main.json');
     }
 
-    function videosCtrl(ContentData,Footer, WebApp) {
+    videosCtrl.$inject = ['ContentData', 'Footer', 'WebApp'];
+    function videosCtrl(ContentData, Footer, WebApp) {
         WebApp.setShowFooter(true);
         WebApp.setBodyLayout('videos');
         WebApp.setMenuList('videos');
@@ -24,6 +26,7 @@
         Footer.setBackButton(false);
     }
 
+    playerCtrl.$inject = ['Footer', 'WebApp'];
     function playerCtrl(Footer,WebApp) {
         WebApp.setShowFooter(true);
         WebApp.setBodyLayout('video-player');

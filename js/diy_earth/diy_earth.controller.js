@@ -1,9 +1,9 @@
 (function () {
     'use strict';
-    angular.module('edu.ucar.scied.controllers.climatechange.diy_earth', [])
+    angular.module('edu.ucar.scied.diy_earth.controller', [])
         .controller('diyEarthCtrl', diyEarthCtrl);
-
-    function diyEarthCtrl($scope, ContentData,Footer, WebApp) {
+    diyEarthCtrl.$inject = ['$scope', 'ContentData', 'Footer', 'WebApp'];
+    function diyEarthCtrl($scope, ContentData, Footer, WebApp) {
         WebApp.setShowFooter(true);
         WebApp.setBodyLayout('home');
         Footer.setBackButton(false);
