@@ -1,0 +1,189 @@
+.index_menu .row {
+    margin: 0;
+}
+
+.index_menu .col-sm-6 {
+    padding: 0;
+}
+
+img: {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+h1.changes {
+    color: #d4673e;
+}
+
+.row.changes .rounded-list span::before {
+    background: #d4673e;
+    color: #fff;
+    text-shadow: 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+h1.choices {
+    color: #7ca640;
+}
+
+.row.choices .rounded-list span::before {
+    background: #7ca640;
+    color: #fff;
+    text-shadow: 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+h1.causes {
+    color: #ffc420;
+}
+
+.row.causes .rounded-list span::before {
+    background: #ffc420;
+    color: #000;
+    text-shadow: 0 5px 0 rgba(255, 255, 255, .5);
+}
+
+h1.impacts {
+    color: #4c65a7;
+}
+
+.row.impacts .rounded-list span::before {
+    background: #4c65a7;
+    color: #fff;
+    text-shadow: 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+.faq {
+    background-color: #fff;
+}
+
+.faq ol {
+    counter-reset: li;
+    /* Initiate a counter */
+    list-style: none;
+    /* Remove default numbering */
+    *list-style: decimal;
+    /* Keep using default numbering for IE6/7 */
+    list-style-position: inside;
+    font: 3em 'trebuchet MS', 'lucida sans';
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.faq ol ol {
+    margin: 0 0 0 2em;
+    /* Add some left margin for inner lists */
+}
+
+.faq h1.slide {
+    font-size: 4em;
+    padding-bottom: 20px;
+}
+
+.rounded-list span {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #ddd;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;
+    color: #444;
+}
+
+.rounded-list span:hover {
+    background: #eee;
+}
+
+.rounded-list span:hover:before {
+    /*transform: rotate(360deg);  */
+}
+
+.rounded-list span:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+
+/* layotus */
+
+.two-col-text-image .content {
+    float: left;
+    width: 50%;
+}
+
+.two-col-text-image .graphic {
+    float: left;
+    width: 45%;
+}
+
+
+/* temp */
+
+.one-col-text-image .graphic img {
+    width: 1880px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.two-col-text-image .graphic img {
+    width: 800px;
+    height: 860px;
+}
+
+.one-col-image-only .graphic img {
+    width: 1880px;
+    height: 860px;
+}
+
+
+/* end temp */
+
+.faq .slide {
+    position: absolute;
+    left: 1920px;
+    width: 1920px;
+    padding: 20px 20px;
+    margin: 0;
+    -webkit-animation: slide 1s forwards;
+    animation: slide 1s forwards;
+}
+
+.faq .slide.first {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+.faq .slide.second {
+    font-size: 1.5em;
+    margin-top: 100px;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+    }
+}

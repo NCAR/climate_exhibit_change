@@ -12,8 +12,21 @@
                 "height":244
             }
         },
+        
         {
             "id": 2,
+            "active": true,
+            "title": "FAQ",
+            "description": "",
+            "url": "#/apps/faq",
+            "placeholder": {
+                "image": "/core/assets/images/menu/posterframes/climate_faq.jpg",
+                "width": 475,
+                "height": 243
+            }
+        },
+        {
+            "id": 3,
             "active": true,
             "title": "Videos",
             "description": "",
@@ -25,7 +38,7 @@
                 "width": 475,
                 "height": 243
             }
-            }
+        }
         ],
     "videos": [
         {

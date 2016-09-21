@@ -10,12 +10,9 @@ body {
 .videos {
     background-image: url(/core/assets/images/bkg/climate_change.jpg);
 }
-.vertical-align .item{
-    margin-left:275px;
-}
-.videos .vertical-align .item {
-    margin-left:75px;
-}
 .vertical-align .row.row_1 {
     margin-top: 300px;
+}
+.vertical-align .row.row_1 .col-md-3.item{
+    margin-left:80px;
 }

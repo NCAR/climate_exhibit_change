@@ -1,0 +1,163 @@
+{
+    "baseUrl": "#/apps/faq/",
+    "categories": {
+        "changes": {
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "What’s the difference between global warming and climate change?",
+                    "displayType": "one-col-text-image",
+                    "content": {
+                        "html": "<p>'Global warming’ refers to the rising temperature of our planet due to increasing amounts of greenhouse gases in the air. Since 1880, the average global surface air temperature has risen by close to 1.8°F (1.0°C). ‘Climate change’ refers to any change in the average climate over a period of time, usually at least three decades. Recent climate change includes global warming as well as associated changes in rainfall and snowfall, ocean temperature, ice and snow cover, and ecosystems around the globe.</p>",
+                        "image": "assets/images/image00.jpg"
+                    }
+            }, {
+                    "id": 2,
+                    "question": "Isn’t carbon dioxide naturally found in the atmosphere?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>Yes. But there is more carbon dioxide in the air today because of human activity. The natural global carbon cycle includes the exchange of carbon dioxide (CO2) between the land, ocean, and atmosphere. Before the Industrial Revolution, the amount of CO2 in the air remained relatively stable for thousands of years. Over the last 100-plus years, humans have been burning carbon-based fuels for the majority of their energy needs, such as heating, cooling, lighting, and transportation. Burning fossil fuels releases more CO2 into the atmosphere that would otherwise be stored in soils and buried underground. Therefore, more carbon dioxide is now entering the air than leaving it, resulting in the highest concentration of atmospheric CO2 in at least one million years.</p>",
+                        "image": "assets/images/image02.jpg"
+                    }
+            }, {
+                    "id": 3,
+                    "question": "Why should I believe that climate change is real?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>There are multiple scientific measurement techniques that collect temperature data on the land, in the oceans, and in the atmosphere. All of these show an indisputable global warming trend in recent decades. In addition, there are a variety of other observations such as sea level rise, reduced Arctic sea ice extent, and increased ocean heat that provide further evidence of a warming Earth. Thousands of independent scientists and research centers around the world, including NCAR, have found through rigorous scientific investigations that climate change is occurring. We have known for more than a century that greenhouse gases warm the climate, and there is no evidence that the bulk of recent climate change is somehow unrelated to fossil fuel burning.</p>",
+                        "image": "assets/images/image01.jpg"
+                    }
+            }, {
+                    "id": 4,
+                    "question": "Can climate change speed up or slow down?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>Yes. Earth’s global temperature may increase or decrease at various speeds, depending on a number of natural and human-caused factors. For example, a massive volcanic eruption can block sunlight from reaching the surface and abruptly cool global temperatures for as much as a year or two. Over the last century, there have been several speedups and slowdowns in global atmospheric warming, but the overall trend has still been upward.  Even a whole century’s worth of warming can be considered “rapid” when you look at how climate has progressed over many thousands of years. Physical clues, such as air bubbles trapped in ice, tell us that the rate of warming over the last few decades is much greater than the pace of other major warming events in Earth’s climate history.</p>",
+                        "image": "assets/images/image04.jpg"
+                    }
+            }
+        ]
+        },
+        "causes": {
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "How do we know the Sun isn’t causing recent global warming?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>The Sun plays an important role in Earth’s climate by providing the primary source of energy (solar radiation). Scientists monitor the variations in solar radiation using direct measurements from satellite sensors. The total energy of the Sun varies over an 11-year cycle, but only by about a tenth of one percent. During the last few decades, there has been virtually no change in the total output of the Sun. Still, Earth’s atmosphere and oceans have warmed up significantly. In fact, the 11-year solar cycle was close to its minimum in 2010, yet Earth’s surface temperature set a record high that same year. Another clue: land surface temperatures and night temperatures are also warming. These combined observed effects in temperature warming in the troposphere are exactly what we would expect to happen with increased greenhouse gases.</p>",
+                        "image": "assets/images/image03.jpg"
+                    }
+                },
+                {
+                    "id": 2,
+                    "question": "Are humans responsible for today’s climate change?",
+                    "displayType": "one-col-text-image",
+                    "content": {
+                        "html": "<p>Yes, mostly. Climate change in the past was caused by natural factors, such as variations in sunlight, a change in Earth’s wobble and orbit, or volcanic eruptions. These natural factors always play a role in climate, but their influence in recent decades has been minor compared to human factors. Scientists monitor both natural and human activities by collecting data with satellite- and land-based instruments all around the globe.  Climate models show that solar and volcanic activity by themselves can’t explain the warming these instruments have observed. Only when greenhouse gas emissions from human activities are included in climate models can the current warming be explained.</p>",
+                        "image": "assets/images/image06.jpg"
+                    }
+                },
+                {
+                    "id": 3,
+                    "question": "Is the ozone hole related to recent warming trends at the surface?",
+                    "displayType": "one-col-text-image",
+                    "content": {
+                        "html": "<p>No. The ozone layer is a thin layer of the upper atmosphere that acts as a shield and absorbs dangerous ultraviolet radiation from the Sun. The ‘ozone hole’ refers to a thinning of this protective layer, a depletion that occurs above Antarctica for a few weeks each year. A less severe depletion has been observed above much of the planet. The ozone hole is due to chlorofluorocarbons (CFCs) that were formerly used in aerosol spray cans, refrigerators, and air conditioners. These stable molecules remain in the air for many years, and they can react with other molecules in sunlight on very cold, high-altitude polar clouds to eventually break down ozone molecules. Fortunately, the world’s nations agreed to ban CFC gases in the late 1980s, and the ozone hole has since begun to slowly recover. Without this protective layer, a much larger amount of dangerous ultraviolet radiation would reach people, plants, and animals.</p>",
+                        "image": "assets/images/image05.jpg"
+                    }
+                },
+                {
+                    "id": 4,
+                    "question": "Could another ice age happen and stop global warming?",
+                    "displayType": "one-col-text-image",
+                    "content": {
+                        "html": "<p>Not anytime soon. Past ice ages have occurred about every 100,000 years. These are caused by cyclical changes in Earth’s orbit, wobble, and rotation. Such changes affect the amount and timing of sunlight reaching the Northern Hemisphere. During an ice age, polar ice sheets grow and persist for many thousands of years. Their bright surfaces reflect sunlight and cool the planet. In between the ice ages, there are warmer interglacial periods that are often triggered by more summer sunlight reaching the Northern Hemisphere. The current interglacial period has lasted more than 10,000 years. The consensus among climate scientists is that it will continue, with no ice age around the corner. In fact, greenhouse gases and associated warming are already melting large amounts of ice over parts of Antarctica and Greenland. Our current interglacial period is expected to last at least 50,000 years, and it may extend for another 100,000 years or more because of carbon dioxide emissions from human activities leading to global temperature warming. An ice age would have many serious impacts on society and ecosystems. However, climate warming, due to increased greenhouse gases, has its own serious risks and hazards.</p>",
+                        "image": "assets/images/image08.jpg"
+                    }
+                }
+            ]
+
+        },
+        "impacts": {
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Does it really matter if the temperature rises a few degrees?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>Yes. Temperature plays a critical role in how nature works. Even a small change in global average temperature can have a noticeable impact on weather patterns, plants, animals, oceans, and people around the world. We’ve already increased global air temperatures by close to 1.8°F over the last century, and this temperature increase has caused measurable impacts on every continent and in every ocean. Some parts of the world, such as high-latitude and high-elevation regions, are warming even faster than the global average. A shift in a degree or two may not seem very significant to our human skin, but the planet responds in more dramatic ways.</p><p>For example, the average temperature in the U.S. capitol of Washington, D.C., is only about 4°F warmer than in Boston, but Washington has many more 90°F and 100°F days. Heat waves are already becoming more frequent and intense across the nation. Around 6,000 year ago, the western interior of the United States was less than 2°F (or 1°C) cooler, but it was largely a desert due to prolonged drought conditions. Trees accustomed to a particular climate, such as the sugar maples of New England, may suffer or die out with only a small amount of long-term warming. Pine beetle infestations have increased due to warming temperatures, and widespread outbreaks have decimated tree populations across the Rocky Mountain Region. Temperature change, even in small amounts, is serious business.</p><p>The goal of the Paris Agreement, produced in 2015 by the world’s nations, is to limit warming over the next century to no more than a 3.6°F increase above preindustrial conditions. Even this amount of warming could require major changes to where and how we grow crops, how we protect our coastal cities from rising seas, how we manage our water resources, and how we deal with fire-prone forests. If global temperatures warm beyond the goal of the Paris Agreement, then even more adaptation will be required.</p>",
+                        "image": "assets/images/image07.jpg"
+                    }
+                },
+                {
+                    "id": 2,
+                    "question": "What will a little sea level rise do to our coastlines?",
+                    "displayType": "one-col-text-image",
+                    "content": {
+                        "html": "<p>A lot! Sea level rise occurs for two reasons. First, as ocean water warms, it expands. Second, as the temperature of the air warms, it continues to melt snow and ice on land, sending meltwater into the oceans. These two processes have forced the average global sea level to rise by about 8 inches over the last century. The pace of the rise has been about 50% faster since the 1990s. How much more the sea level rises this century will depend on how much greenhouse gases are emitted and how much the temperature continues to warm. The Intergovernmental Panel on Climate Change (IPCC) predicts between 1 to 3 feet of sea level rise by the end of the century, but recent research suggests it could rise by as much as 6 feet if Antarctic ice sheets are destabilized. Millions of people living near the coasts of the U.S. are highly vulnerable to sea level rise and its devastating impacts, including more frequent flooding and more destructive storm surges. Already, places such as Norfolk, Virginia, and Miami Beach, Florida, are having increasing problems with recurrent flooding. In some areas, the coastal landscape is subsiding, which raises the risk of future flooding even more. Around the world, tropical islands are severely threatened by sea level rise, with many villages already underwater.</p>",
+                        "image": "assets/images/image11.jpg"
+                    }
+                },
+                {
+                    "id": 3,
+                    "question": "If the world is getting warmer, why are there still heavy snowstorms?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>An important distinction is between weather and climate. Weather refers to short-term events, and climate refers to the long-term average. There will always be hot and cold days in the short term and from season to season, while global warming is the long-term warming trend. As the Earth continues to warm, record high temperatures will become more frequent and record lows less frequent.  Already, the U.S. has had two to three times more daily record highs than daily record lows in recent years. Climate change also increases the frequency and/or intensity of some types of extreme weather, including heat waves and heavy rains. The strongest hurricanes are becoming more frequent, and warmer temperatures are worsening the impact of droughts. A warmer atmosphere and warmer oceans mean that more water vapor enters the air—which means that although winters may become less intense over the long term, a particular snowstorm could be stronger due to the extra water vapor in the air.</p>",
+                        "image": "assets/images/image09.jpg"
+                    }
+                },
+                {
+                    "id": 4,
+                    "question": "Is climate change good for some plants or animals?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>A warmer climate is not necessarily a good thing for ecosystems as we know them today. Some plants and animals, especially many insects and pests, are well adapted to a wide range of conditions. Others, like large mammals and small amphibians, live within a specific habitat and depend on a narrower range of climate conditions. As temperatures and rainfall patterns change, plants and animals respond, and sometimes not very well. Some plants and animals are already shifting toward cooler locations at higher latitudes or elevations. Many plants and animals can only move so far, however, as their habitats disappear, corridors are blocked by development, and cooler places become harder to find. For example, polar bears have to swim farther in search of food as sea ice melts, and birds are migrating farther toward the poles as temperatures warm. Spring is coming earlier each year in many places, but some flowers are blooming out of sync with migrating pollinators.</p><p>Unfortunately, many of the species that will benefit from climate change are invasive and destructive. Plant-killing pests can reproduce more quickly in a warming climate, and weeds can proliferate. As plants and animals move or die, ecosystems unravel. Recent studies suggest that one in six species are at risk of extinction by the end of the century, and climate change could possibly lead to the sixth mass extinction in Earth’s history if nothing is done to stop global warming.</p>",
+                        "image": "assets/images/image10.jpg"
+                    }
+                }
+            ]
+        },
+        "choices": {
+            "questions": [
+                {
+                    "id": 1,
+                    "question": "Is it too late to prevent catastrophic climate change?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>Global warming is not reversible, but it can be stopped. The leading cause of current climate change is too much carbon dioxide in the air, which traps heat and warms the planet. The main reason why temperatures won’t just go back to normal even if we stop emitting carbon dioxide (CO2) is because most of the CO2 that we have already emitted will stay in the atmosphere for centuries. Even thousands of years from now, up to 20% of the CO2 that we emit today may still be in the air, warming the Earth. If we do nothing about lowering current CO2 emissions, then the climate may be warmer and more unpredictable for our children and grandchildren than we have ever seen before. But if we considerably reduce our emissions, we can help to stabilize the planet such that no further warming occurs. Preventing the worst outcomes of climate change is definitely still possible, and everything we do to reduce greenhouse emissions will reduce the odds of those worst outcomes.</p>",
+                        "image": "assets/images/image12.jpg"
+                    }
+                },
+                {
+                    "id": 2,
+                    "question": "What can you do to help fight climate change?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>A lot! There are many things that you can do in your home, school, work, and community to help reduce climate change. To live a more climate-friendly lifestyle, you can cut back on the amount of energy used at home (by insulating your house, for example, or replacing an older, energy-hogging refrigerator). When you’re on the go, you can take advantage of public transport or purchase a more fuel-efficient car. No matter where you are, shifting toward a more plant-based diet of local, organic produce will help to reduce the large carbon footprint associated with meat production and transportation emissions. Together with these changes, two of the best actions you can take to ensure a better future are talking with friends and family to spread awareness on climate change and working in your local community towards sustainable living practices, including reducing, reusing, and recycling.</p>",
+                        "image": "assets/images/image13.jpg"
+                    }
+                },
+                {
+                    "id": 3,
+                    "question": "What's the best car to drive to help reduce climate change?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>Walking, riding a bike, taking the bus, or sharing a ride are your best options! But if you are looking for a vehicle, the best car to drive today is an electric car, as long as you know that the electricity you use comes from alternative energy sources like solar and wind rather than from fossil fuels. The second-best car is a hybrid: they are generally more efficient than a typical gasoline car, thanks to the extra power they get storing energy from the car’s brakes. There are also plug-in hybrids that allow you to use electricity for short trips while having a hybrid gas engine for longer trips. If an electric or hybrid car is not an option, then driving a fuel-efficient smaller car is the next-best choice. The most climate-unfriendly car to drive is any vehicle with low gas mileage. If an SUV is a must, try a hybrid version. If you have an older vehicle that gets good gas mileage, try keeping it as long as possible to reduce the amount of energy used to manufacture cars. Meanwhile, new automobile technologies are being developed, and hopefully one day we will have carbon-neutral vehicles.</p>",
+                        "image": "assets/images/image14.jpg"
+                    }
+                },
+                {
+                    "id": 4,
+                    "question": "What are other countries doing about climate change?",
+                    "displayType": "two-col-text-image",
+                    "content": {
+                        "html": "<p>All of the world’s countries—especially those that use large amounts of energy—must lower their current greenhouse gas emissions to make a difference. The United States is the second-largest emitter of carbon dioxide behind China, and so U.S. action is essential. But the U.S. alone cannot solve climate change. Other major emitting nations, such as China, India, Russia, and the countries in the European Union, must also take action to reduce their emissions. Fortunately, the entire world is now on board to reduce climate change. In 2015, the Paris Agreement brought together 195 nations that agreed to reduce emissions, including the U.S., China, and India. Each country is developing its own emissions reduction plan as part of the agreement. The actions depend on each country’s main source of emissions, their economic and political environments, available technologies, and more. China is working to build a national carbon market and leads the world in implementing solar energy technologies at a national scale. European nations are scaling up renewables like wind energy. The U.S. is regulating coal-fired power plants. Each country must do its share to reduce emissions to lower the negative global impacts of climate change.</p>",
+                        "image": "assets/images/image15.jpg"
+                    }
+                }
+            ]
+        }
+    }
+}

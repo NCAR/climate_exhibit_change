@@ -7,6 +7,8 @@
     "edu.ucar.scied.menulist.controller",
     "edu.ucar.scied.videos.controller",
     "edu.ucar.scied.diy_earth.controller",
+    "edu.ucar.scied.faq.controller",
+    "edu.ucar.scied.faq.directive",
     "edu.ucar.scied.footer.service",
     "edu.ucar.scied.footer.directive",
     "edu.ucar.scied.filters",
@@ -37,6 +39,18 @@
         when("/apps/diy-earth", {
             templateUrl: "js/diy_earth/diy_earth.html",
             controller: "diyEarthCtrl"
+        }).
+        when("/apps/faq", {
+            templateUrl: "js/faq/faq_home.html",
+            controller: "localFaqCtrl",
+        })
+        .when("/apps/faq/:menuId", {
+            templateUrl: "js/faq/faq_list.html",
+            controller: "localFaqCtrl",
+        })
+        .when("/apps/faq/:menuId/:itemId", {
+            templateUrl: "js/faq/faq_answer.html",
+            controller: "localFaqCtrl",
         }).
         otherwise({
             redirectTo: '/'

@@ -1,0 +1,8 @@
+<div class="container-fluid" ng-controller="faqCtrl as faq">
+    <div class="row" ng-class="faq.menuId">
+        <ol class="rounded-list">
+            <li ng-click="app.goToPage(faq.data.baseUrl+faq.menuId+'/'+question.id)" ng-repeat="question in faq.data"><span ng-bind-html="question.question"></span></li>
+        </ol>
+    </div>
+</div>
+<ml-exhibits-footer-menu ng-if="app.getShowFooter()"></ml-exhibits-footer-menu>

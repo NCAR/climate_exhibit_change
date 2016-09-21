@@ -1,0 +1,18 @@
+<div class="container-fluid" ng-controller="faqCtrl as faq">
+    <div class="index_menu">
+        <div class="row">
+            <div class="col-sm-6"><img src="assets/images/changes.jpg" ng-click="app.goToPage(faq.data.baseUrl+'changes')" draggable="false" onmousedown="return false" ></div>
+            <div class="col-sm-6"><img src="assets/images/causes.jpg" ng-click="app.goToPage(faq.data.baseUrl+'causes')" draggable="false" onmousedown="return false" ></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6"><img src="assets/images/choices.jpg" ng-click="app.goToPage(faq.data.baseUrl+'choices')" draggable="false" onmousedown="return false" ></div>
+            <div class="col-sm-6"><img src="assets/images/impacts.jpg" ng-click="app.goToPage(faq.data.baseUrl+'impacts')" draggable="false" onmousedown="return false" ></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<ml-exhibits-footer-menu ng-if="app.getShowFooter()"></ml-exhibits-footer-menu>
