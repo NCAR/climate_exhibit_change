@@ -159,9 +159,9 @@ h1.impacts {
     left: 1920px;
     width: 1920px;
     padding: 20px 20px;
-    margin: 0;
     -webkit-animation: slide 1s forwards;
     animation: slide 1s forwards;
+    margin:15px;
 }
 
 .faq .slide.first {
