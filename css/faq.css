@@ -68,7 +68,8 @@ h1.impacts {
     list-style-position: inside;
     font: 3em 'trebuchet MS', 'lucida sans';
     padding: 10px;
-    margin-left: 60px;
+    margin-left: 70px;
+    margin-top:15px;
 }
 
 .faq ol ol {
@@ -171,7 +172,7 @@ h1.impacts {
 
 .faq .slide.second {
     font-size: 1.5em;
-    margin-top: 100px;
+    margin-top: 80px;
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
