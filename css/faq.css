@@ -137,8 +137,8 @@ h1.impacts {
 /* temp */
 
 .one-col-text-image .graphic img {
-    width: 1880px;
-    height: 400px;
+    width: 1840px;
+  /*  height: 400px;*/
     margin-bottom: 20px;
 }
 
@@ -148,8 +148,8 @@ h1.impacts {
 }
 
 .one-col-image-only .graphic img {
-    width: 1880px;
-    height: 860px;
+    width: 1840px;
+   /* height: 860px;*/
 }
 
 
