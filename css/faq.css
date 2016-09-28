@@ -68,7 +68,7 @@ h1.impacts {
     list-style-position: inside;
     font: 3em 'trebuchet MS', 'lucida sans';
     padding: 10px;
-    margin-left: 70px;
+    margin-left: 75px;
     margin-top:15px;
 }
 
@@ -158,11 +158,12 @@ h1.impacts {
 .faq .slide {
     position: absolute;
     left: 1920px;
-    width: 1920px;
+    width: 1850px;
     padding: 20px 20px;
     -webkit-animation: slide 1s forwards;
     animation: slide 1s forwards;
-    margin:15px;
+    margin-left:20px;
+    margin-right:20px;
 }
 
 .faq .slide.first {
@@ -176,7 +177,10 @@ h1.impacts {
     -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
-
+.faq .slide.second .content {
+    margin-top:15px;
+    margin-left:15px;
+}
 @-webkit-keyframes slide {
     100% {
         left: 0;
