@@ -68,7 +68,7 @@ h1.impacts {
     list-style-position: inside;
     font: 3em 'trebuchet MS', 'lucida sans';
     padding: 10px;
-    margin-left: 75px;
+    margin-left: 85px;
     margin-top:15px;
 }
 
@@ -78,8 +78,9 @@ h1.impacts {
 }
 
 .faq h1.slide {
-    font-size: 4em;
+    font-size: 3.5em;
     padding-bottom: 20px;
+    margin-left:30px;
 }
 
 .rounded-list span {
@@ -138,7 +139,6 @@ h1.impacts {
 
 .one-col-text-image .graphic img {
     width: 1840px;
-  /*  height: 400px;*/
     margin-bottom: 20px;
 }
 
@@ -149,7 +149,6 @@ h1.impacts {
 
 .one-col-image-only .graphic img {
     width: 1840px;
-   /* height: 860px;*/
 }
 
 

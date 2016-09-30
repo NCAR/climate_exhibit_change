@@ -8,6 +8,7 @@
     function localFaqCtrl($scope, Footer, WebApp) {
         WebApp.setShowFooter(true);
         WebApp.setBodyLayout('faq');
+        Footer.setBackButton(false);
         WebApp.setDataSource('data/faq.json');
         Footer.setPageTitle("Frequently Asked Questions");
                        
