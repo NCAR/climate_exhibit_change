@@ -16,7 +16,7 @@
         <div id="earth-side" class="col-md-7">
             <div id="earth-legend-vert" class="col-md-1" style="width: 7em;">
                 <span class="row">Warmest Ever</span>
-                <img id="earth-temp-legend" src="/core/assets/apps/diyearth/images/temp_scale_avg.png" class="temp_scale"/>
+                <img id="earth-temp-legend" src="/assets/apps/diyearth/images/temp_scale_avg.png" class="temp_scale"/>
                 <span class="row">Coolest Ever</span>
                 
                 <div id="temp-gauge-vert" ng-class="{'diy':!isTimelineMode}">
@@ -27,8 +27,8 @@
             </div>
             
             <div id="earth-vert" class="col-md-11">
-                <img id="earth-img" ng-if="isTimelineMode" ng-src="/core/assets/apps/diyearth/images/timeline_earth{{selectedPeriod.earth_image}}.png" class="img-responsive" spinner-on-load/>
-                 <img id="earth-img" ng-if="!isTimelineMode" ng-src="/core/assets/apps/diyearth/images/diy_earth{{earthNumber}}.png" class="img-responsive" spinner-on-load/>
+                <img id="earth-img" ng-if="isTimelineMode" ng-src="/assets/apps/diyearth/images/timeline_earth{{selectedPeriod.earth_image}}.png" class="img-responsive" spinner-on-load/>
+                 <img id="earth-img" ng-if="!isTimelineMode" ng-src="/assets/apps/diyearth/images/diy_earth{{earthNumber}}.png" class="img-responsive" spinner-on-load/>
                 
             </div>
         </div>
@@ -38,7 +38,7 @@
                     Incoming Sunlight
                 </div>
                 <div class="row dial">
-                    <div style="margin-left: 1.8em;"><img src="/core/assets/apps/diyearth/images/meter_dial2.png" class="img-responsive"/></div>
+                    <div style="margin-left: 1.8em;"><img src="/assets/apps/diyearth/images/meter_dial2.png" class="img-responsive"/></div>
                     <div class="sun-dial {{diy_sun_dial}}" style="margin-left: 4em;" ng-if="!isTimelineMode"></div>
                     <div class="sun-dial {{selectedPeriod.sun_dial}}" style="margin-left: 4.2em;" ng-if="isTimelineMode"></div>
                 </div>
@@ -50,9 +50,9 @@
                 </div>
                 <div class="row factors timeline" ng-if="isTimelineMode">
                     <button ng-repeat="aFactor in selectedPeriod.buttons.timeline_sun" class="row btn no-button-looks" ng-click="select(aFactor)" ng-class="{'selected': (aFactor.isSelected), 'inactive':(!aFactor.active)}">
-                        <img ng-if="aFactor.active" class="btn img-responsive factor-btn" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_active.png" spinner-on-load/>
-                        <img ng-if="aFactor.isSelected && aFactor.active" class="btn img-responsive factor-btn selected" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_select.png" spinner-on-load/>
-                        <img ng-if="!aFactor.active" class="btn img-responsive factor-btn inactive" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_inactive.png" spinner-on-load/>  <!-- disabled="true" -->
+                        <img ng-if="aFactor.active" class="btn img-responsive factor-btn" ng-src="/assets/apps/diyearth/images/factor_{{aFactor.icon}}_active.png" spinner-on-load/>
+                        <img ng-if="aFactor.isSelected && aFactor.active" class="btn img-responsive factor-btn selected" ng-src="/assets/apps/diyearth/images/factor_{{aFactor.icon}}_select.png" spinner-on-load/>
+                        <img ng-if="!aFactor.active" class="btn img-responsive factor-btn inactive" ng-src="/assets/apps/diyearth/images/factor_{{aFactor.icon}}_inactive.png" spinner-on-load/>  <!-- disabled="true" -->
                     <span ng-bind-html="aFactor.label | unsafe"></span></button>                  
                 </div>
 
@@ -67,7 +67,7 @@
                     Trapped Heat
                 </div>
                 <div class="row dial">
-                    <div style="margin-left: 2em;"><img src="/core/assets/apps/diyearth/images/meter_dial3.png" class="img-responsive"/></div>
+                    <div style="margin-left: 2em;"><img src="/assets/apps/diyearth/images/meter_dial3.png" class="img-responsive"/></div>
                     <div style="margin-left: 4em;" class="co2-dial {{diy_co2_dial}}" ng-if="!isTimelineMode"></div>
                     <div style="margin-left: 4.2em;" class="co2-dial {{selectedPeriod.co2_dial}}" ng-if="isTimelineMode"></div>
                 </div>
@@ -81,9 +81,9 @@
                 </div>
                 <div class="row factors timeline" ng-if="isTimelineMode">
                     <button ng-repeat="aFactor in selectedPeriod.buttons.timeline_co2" class="row btn no-button-looks {{aFactor.icon}}" ng-click="select(aFactor)" ng-class="{'selected': (aFactor.isSelected), 'inactive':(!aFactor.active)}">
-                        <img ng-if="aFactor.active" class="btn img-responsive factor-btn" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_active.png" spinner-on-load/>
-                        <img ng-if="aFactor.isSelected && aFactor.active" class="btn img-responsive factor-btn selected" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_select.png" spinner-on-load/>
-                        <img ng-if="!aFactor.active" class="btn img-responsive factor-btn inactive" ng-src="/core/assets/apps/diyearth/images/factor_{{aFactor.icon}}_inactive.png" spinner-on-load/>
+                        <img ng-if="aFactor.active" class="btn img-responsive factor-btn" ng-src="/assets/apps/diyearth/images/factor_{{aFactor.icon}}_active.png" spinner-on-load/>
+                        <img ng-if="aFactor.isSelected && aFactor.active" class="btn img-responsive factor-btn selected" ng-src="/assets/apps/diyearth/images/factor_{{aFactor.icon}}_select.png" spinner-on-load/>
+                        <img ng-if="!aFactor.active" class="btn img-responsive factor-btn inactive" ng-src="/assets/apps/diyearth/images/factor_{{aFactor.icon}}_inactive.png" spinner-on-load/>
                     <span ng-bind-html="aFactor.label | unsafe"></span></button>
                 </div>
             </div>

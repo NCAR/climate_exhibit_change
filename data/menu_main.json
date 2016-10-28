@@ -7,7 +7,7 @@
             "description": "DESCR HERE",
             "url": "#/apps/diy-earth",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_change_diyearth.jpg",
+                "image": "/assets/images/menu/posterframes/climate_change_diyearth.jpg",
                 "width":476,
                 "height":244
             }
@@ -20,7 +20,7 @@
             "description": "",
             "url": "#/apps/faq",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_faq.jpg",
+                "image": "/assets/images/menu/posterframes/climate_faq.jpg",
                 "width": 475,
                 "height": 243
             }
@@ -32,9 +32,9 @@
             "description": "",
             "url": "#/videos",
            "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_change_temperature.jpg",
-                "thumb": "/core/assets/images/menu/climate_change_temperature-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/climate_change_temperature.mp4",
+                "image": "/assets/images/menu/posterframes/climate_change_temperature.jpg",
+                "thumb": "/assets/images/menu/climate_change_temperature-thumb.jpg",
+                "mp4": "/assets/videos/menu/climate_change_temperature.mp4",
                 "width": 475,
                 "height": 243
             }
@@ -49,9 +49,9 @@
             "description": "<p></p>",
             "url": "#/videos/baseball",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_change_baseball.jpg",
-                "thumb": "/core/assets/images/menu/climate_change_baseball-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/climate_change_baseball.mp4",
+                "image": "/assets/images/menu/posterframes/climate_change_baseball.jpg",
+                "thumb": "/assets/images/menu/climate_change_baseball-thumb.jpg",
+                "mp4": "/assets/videos/menu/climate_change_baseball.mp4",
                 "width": 475,
                 "height": 243
             }
@@ -64,9 +64,9 @@
             "description": "<p></p>",
             "url": "#/videos/temperature",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_change_temperature.jpg",
-                "thumb": "/core/assets/images/menu/climate_change_temperature-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/climate_change_temperature.mp4",
+                "image": "/assets/images/menu/posterframes/climate_change_temperature.jpg",
+                "thumb": "/assets/images/menu/climate_change_temperature-thumb.jpg",
+                "mp4": "/assets/videos/menu/climate_change_temperature.mp4",
                 "width": 475,
                 "height": 243
             }
@@ -79,9 +79,9 @@
             "description": "<p></p>",
             "url": "#/videos/precipitation",
             "placeholder": {
-                "image": "/core/assets/images/menu/posterframes/climate_change_precipitation.jpg",
-                "thumb": "/core/assets/images/menu/climate_change_precipitation-thumb.jpg",
-                "mp4": "/core/assets/videos/menu/climate_change_precipitation.mp4",
+                "image": "/assets/images/menu/posterframes/climate_change_precipitation.jpg",
+                "thumb": "/assets/images/menu/climate_change_precipitation-thumb.jpg",
+                "mp4": "/assets/videos/menu/climate_change_precipitation.mp4",
                 "width": 475,
                 "height": 243
             }

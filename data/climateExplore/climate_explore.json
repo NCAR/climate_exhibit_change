@@ -3,7 +3,7 @@
         "diy_temps" : [-160, 14, 18, 28, -130, 57, 58, 64],
         "diy_temps_c" : [-107, -10, -8, -2, -90, 14, 14, 18],
         "timeline_inactive_description" : "Each of these factors may play a role in Earth’s climate, but this factor is not considered to be one of the primary driving factors for a temperature difference from the baseline average of the 20<sup>th</sup> century.",
-        "dials_info":"<p style='text-align: left;color: black;margin-left: 1em;margin-right: 1em;'>The climate is controlled by how much sunlight reaches the Earth and how much heat gets trapped in the atmosphere. As the factors that influence sunlight and heat change over time, so does the climate. While past climate changes were natural, today’s climate is greatly influenced by human emissions of heat-trapping gases into the atmosphere.</p> <img ng-if='isInfo' src='/core/assets/apps/diyearth/images/info_balance_graphic.png'/>",
+        "dials_info":"<p style='text-align: left;color: black;margin-left: 1em;margin-right: 1em;'>The climate is controlled by how much sunlight reaches the Earth and how much heat gets trapped in the atmosphere. As the factors that influence sunlight and heat change over time, so does the climate. While past climate changes were natural, today’s climate is greatly influenced by human emissions of heat-trapping gases into the atmosphere.</p> <img ng-if='isInfo' src='/assets/apps/diyearth/images/info_balance_graphic.png'/>",
         "diy_sun": [
             {
                 "id": 1,

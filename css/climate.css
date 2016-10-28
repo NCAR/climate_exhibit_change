@@ -20,7 +20,7 @@
 }
 
 #diy-earth #background_holder{
-    background:#ffffff url('/core/assets/apps/diyearth/images/background.jpg') center no-repeat;
+    background:#ffffff url('/assets/apps/diyearth/images/background.jpg') center no-repeat;
     background-size: cover;
     position:absolute;
     width: 1920px;
@@ -46,7 +46,7 @@
 #diy-earth #app_header-image {
     text-indent: -9999px;
     padding-right:30px;
-    background: url('/core/assets/apps/diyearth/images/title.png') no-repeat;
+    background: url('/assets/apps/diyearth/images/title.png') no-repeat;
     background-size: 100%;
     min-height: 90px;
     margin-top: 1em;
@@ -137,13 +137,13 @@
     /*max-height:70px;*/
 }
 #diy-earth #timeline-switch button.toggle_diy {
-    background:url('/core/assets/apps/diyearth/images/mode_switch_diy.png') no-repeat;
+    background:url('/assets/apps/diyearth/images/mode_switch_diy.png') no-repeat;
     width:100%;
     height: 5em;
     cursor: pointer;
 }
 #diy-earth #timeline-switch button.toggle_timeline {
-    background:url('/core/assets/apps/diyearth/images/mode_switch_timeline.png') no-repeat;
+    background:url('/assets/apps/diyearth/images/mode_switch_timeline.png') no-repeat;
     width:100%;
     height: 5em;
     cursor: pointer;
@@ -184,7 +184,7 @@
     width: 22em;
     margin-top: 2em;
     margin-left: 18em;
-    background: url('/core/assets/apps/diyearth/images/diy_globaltemp.png') no-repeat;
+    background: url('/assets/apps/diyearth/images/diy_globaltemp.png') no-repeat;
     height: 141px;
     padding-top: 1em;
     text-align: left;
@@ -195,7 +195,7 @@
 }
     
 #diy-earth #temp-gauge #temp, #diy-earth #temp-gauge-vert .temp {
-    background: url('/core/assets/apps/diyearth/images/thermometer_shape.png') no-repeat center;
+    background: url('/assets/apps/diyearth/images/thermometer_shape.png') no-repeat center;
     background-size: contain;
     color:#f23573;
     font-family: 'Orbitron', sans-serif;
@@ -259,7 +259,7 @@
 }
 #diy-earth #dials-side .sun-dial, #diy-earth #dials-side .co2-dial
 {
-    background:url('/core/assets/apps/diyearth/images/meter_needle.png') no-repeat;
+    background:url('/assets/apps/diyearth/images/meter_needle.png') no-repeat;
     float: left;
     margin-top: -8px;
     margin-left: 100px;
@@ -310,7 +310,7 @@
 }
 
 #diy-earth #dials-side .factors {
-    background: url('/core/assets/apps/diyearth/images/diy_transparent_rectangle.png') no-repeat;
+    background: url('/assets/apps/diyearth/images/diy_transparent_rectangle.png') no-repeat;
     padding: 1em;
     min-height: 21em;
     text-align: center;
@@ -337,17 +337,17 @@
 #diy-earth #dials-side .no-button-looks.info 
 {
     display: inline-block;
-    background: url('/core/assets/apps/diyearth/images/info.png') no-repeat;
+    background: url('/assets/apps/diyearth/images/info.png') no-repeat;
     width: 3em;
     height: 3em;
 }
 #diy-earth #dials-side .no-button-looks.info.selected
 {
-    background-image:url('/core/assets/apps/diyearth/images/info_select.png');
+    background-image:url('/assets/apps/diyearth/images/info_select.png');
 }
 #diy-earth #info-col
 {
-    background: url('/core/assets/apps/diyearth/images/info_bg.png') no-repeat;
+    background: url('/assets/apps/diyearth/images/info_bg.png') no-repeat;
     background-size: cover;
     margin-left: -3em;
     margin-right: -3em;
@@ -355,7 +355,7 @@
     text-align: center;
 }
 #diy-earth #dials-side .factor {
-    background:url('/core/assets/apps/diyearth/images/diy_setting_deselect.png') no-repeat;
+    background:url('/assets/apps/diyearth/images/diy_setting_deselect.png') no-repeat;
     color:#f23573;
     font-weight:bold;
     margin: 0.9em;
@@ -384,7 +384,7 @@
     left: 166px;
 }
 #diy-earth #dials-side .factor.selected {
-    background-image :url('/core/assets/apps/diyearth/images/diy_setting_select.png') !important;
+    background-image :url('/assets/apps/diyearth/images/diy_setting_select.png') !important;
     color:white;
 }
 #diy-earth #dials-side .factors .text
@@ -411,7 +411,7 @@ div#diy-earth div#loading
 }
 div#diy-earth div#loading .spinner 
 {
-    background:url('/core/assets/apps/diyearth/images/spinner.gif') no-repeat;
+    background:url('/assets/apps/diyearth/images/spinner.gif') no-repeat;
     width:24px;
     height:24px;
     margin-left: auto;
@@ -458,7 +458,7 @@ div#diy-popup > div.diy-popup-container.info > img
 }
 div#diy-popup div.diy-popup-title
 {
-    background: url('/core/assets/apps/diyearth/images/popup_back.png') no-repeat top left;
+    background: url('/assets/apps/diyearth/images/popup_back.png') no-repeat top left;
     /*background-color: #f23573;*/
     color:white;
     padding: 5px 5px 5px 35px;
@@ -541,20 +541,20 @@ div#diy-timeline .timeline-arrow {
 }
 div#diy-timeline #arrow-left.timeline-arrow
 {
-    background: url('/core/assets/apps/diyearth/images/timeline_arrow_back.png') no-repeat;
+    background: url('/assets/apps/diyearth/images/timeline_arrow_back.png') no-repeat;
     margin-right: -1px;
     margin-top: 1.1em;
 }
 div#diy-timeline #arrow-right.timeline-arrow
 {
-    background:url('/core/assets/apps/diyearth/images/timeline_arrow_fwd.png') no-repeat;
+    background:url('/assets/apps/diyearth/images/timeline_arrow_fwd.png') no-repeat;
     margin-left: -1px;
     background-size:100%;
     margin-top: 18px;
 }
 div.timeline-line
 {
-    /*background: url('/core/assets/apps/diyearth/images/timeline_line.png') repeat-x;*/
+    /*background: url('/assets/apps/diyearth/images/timeline_line.png') repeat-x;*/
     /*margin: -10px auto auto 0;*/
     height: 110px;
     margin-top: 3px;
@@ -562,7 +562,7 @@ div.timeline-line
 }
 div.timeline-line .timeline-compressor 
 {
-    background:url('/core/assets/apps/diyearth/images/timeline_compression.png') no-repeat;
+    background:url('/assets/apps/diyearth/images/timeline_compression.png') no-repeat;
     width: 36px;
     height: 61px;
     float: left;
@@ -573,7 +573,7 @@ div#diy-timeline-period
 {
     border-bottom: 5px white solid;
     margin: 0 460px auto 290px;
-    background: url('/core/assets/apps/diyearth/images/timeline_infobox_transparent.png') no-repeat;
+    background: url('/assets/apps/diyearth/images/timeline_infobox_transparent.png') no-repeat;
     background-size:100%;
     padding: 1px 5px 8px 12px;
     width: 1170px;
@@ -627,12 +627,12 @@ div.timeline-dot
     /*margin-top: 42px;*/
     width: 168px;
     margin-top: -4px;
-    background: url('/core/assets/apps/diyearth/images/timeline_line.png') repeat-x 3px;
+    background: url('/assets/apps/diyearth/images/timeline_line.png') repeat-x 3px;
     background-size:contain;
 }
 div.timeline-dot .timeline-dot-circle
 {
-    background:url('/core/assets/apps/diyearth/images/timeline_dot_deselect.png') no-repeat center; 
+    background:url('/assets/apps/diyearth/images/timeline_dot_deselect.png') no-repeat center; 
     width: 40px;
     height:40px;
     background-size:70%;
@@ -640,7 +640,7 @@ div.timeline-dot .timeline-dot-circle
     margin-top: 15px;
 }
 div.timeline-dot .timeline-dot-circle.selected {
-    background-image:url('/core/assets/apps/diyearth/images/timeline_dot_select.png') !important;
+    background-image:url('/assets/apps/diyearth/images/timeline_dot_select.png') !important;
 }
 div#diy-timeline > div.timeline-line > div.timeline-dot > h3 
 {
