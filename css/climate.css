@@ -52,6 +52,10 @@
     margin-top: 1em;
     margin-left: 45px;
 }
+#diy-earth #earth-side #earth-legend-vert span.row {
+  display: block;
+  margin-left: 20px;
+}
 #diy-earth .climate-h1:after {
     left: 89%;
     top: 50%;
