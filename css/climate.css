@@ -18,7 +18,9 @@
     /*width:1920px;*/
     /*height:1080px;*/
 }
-
+#diy-earth .row {
+  margin-left: 5px;
+}
 #diy-earth #background_holder{
     background:#ffffff url('/assets/apps/diyearth/images/background.jpg') center no-repeat;
     background-size: cover;
@@ -179,7 +181,7 @@
     margin-left:10px;
 }
 
-#diy-earth #temp-gauge-vert.diy 
+#diy-earth #temp-gauge-vert.diy
 {
     width: 22em;
     margin-top: 2em;
@@ -193,7 +195,7 @@
 {
     padding-left:5.6em;
 }
-    
+
 #diy-earth #temp-gauge #temp, #diy-earth #temp-gauge-vert .temp {
     background: url('/assets/apps/diyearth/images/thermometer_shape.png') no-repeat center;
     background-size: contain;
@@ -251,7 +253,7 @@
 }
 #diy-earth #dials-side .dial-title
 {
-    text-align:center; 
+    text-align:center;
     /*padding:0 9em;*/
     margin-bottom:1em;
     font-weight: bold;
@@ -316,7 +318,7 @@
     text-align: center;
     background-size: cover;
 }
-#diy-earth #dials-side .factors.timeline 
+#diy-earth #dials-side .factors.timeline
 {
     text-align: left;
     min-height:21em;
@@ -334,7 +336,7 @@
 {
     /*margin-left: 10.4em;*/
 }
-#diy-earth #dials-side .no-button-looks.info 
+#diy-earth #dials-side .no-button-looks.info
 {
     display: inline-block;
     background: url('/assets/apps/diyearth/images/info.png') no-repeat;
@@ -372,7 +374,7 @@
 #diy-earth #dials-side .factor-btn.selected
 {
     position: absolute;
-    left: 11px;
+    left: 51px;
 }
 #diy-earth #dials-side button.ice .factor-btn.selected
 {
@@ -381,7 +383,7 @@
 }
 #diy-earth #dials-side button.plants .factor-btn.selected
 {
-    left: 166px;
+    left: 186px;
 }
 #diy-earth #dials-side .factor.selected {
     background-image :url('/assets/apps/diyearth/images/diy_setting_select.png') !important;
@@ -409,7 +411,7 @@ div#diy-earth div#loading
 {
     display:none !important;
 }
-div#diy-earth div#loading .spinner 
+div#diy-earth div#loading .spinner
 {
     background:url('/assets/apps/diyearth/images/spinner.gif') no-repeat;
     width:24px;
@@ -435,7 +437,7 @@ div#diy-popup, div#loading
   z-index: 10000;
   /*display: none;*/
 }
-div#diy-popup > div.diy-popup-container 
+div#diy-popup > div.diy-popup-container
 {
     position: relative;
     width: 450px;
@@ -444,7 +446,7 @@ div#diy-popup > div.diy-popup-container
     color: black;
     margin: 250px auto auto 640px;/*142px auto auto 650px;*/
 }
-div#diy-popup > div.diy-popup-container.info 
+div#diy-popup > div.diy-popup-container.info
 {
     width:550px;
     text-align: center;
@@ -469,7 +471,7 @@ div#diy-popup div.diy-popup-title
 
 div#diy-popup > div.diy-popup-container h3 {
     margin-top: 7px;
-    font-weight: bold;    
+    font-weight: bold;
 }
 div#diy-popup > div.diy-popup-container > div.diy-popup-content {
     color:black;
@@ -490,7 +492,7 @@ div#diy-popup div.diy-popup-container:after {
     border-right: 30px solid black;
     width: 0;
 }
-div#diy-popup > div > button 
+div#diy-popup > div > button
 {
       display:block;
       width:40px;
@@ -560,7 +562,7 @@ div.timeline-line
     margin-top: 3px;
     float: left;
 }
-div.timeline-line .timeline-compressor 
+div.timeline-line .timeline-compressor
 {
     background:url('/assets/apps/diyearth/images/timeline_compression.png') no-repeat;
     width: 36px;
@@ -632,7 +634,7 @@ div.timeline-dot
 }
 div.timeline-dot .timeline-dot-circle
 {
-    background:url('/assets/apps/diyearth/images/timeline_dot_deselect.png') no-repeat center; 
+    background:url('/assets/apps/diyearth/images/timeline_dot_deselect.png') no-repeat center;
     width: 40px;
     height:40px;
     background-size:70%;
@@ -642,7 +644,7 @@ div.timeline-dot .timeline-dot-circle
 div.timeline-dot .timeline-dot-circle.selected {
     background-image:url('/assets/apps/diyearth/images/timeline_dot_select.png') !important;
 }
-div#diy-timeline > div.timeline-line > div.timeline-dot > h3 
+div#diy-timeline > div.timeline-line > div.timeline-dot > h3
 {
     font-size: 1em;
     color: #8793dd;
