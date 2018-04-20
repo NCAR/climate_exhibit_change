@@ -1,5 +1,5 @@
 {
-    "baseUrl": "#/apps/faq/",
+    "baseUrl": "#!/apps/faq/",
     "categories": {
         "changes": {
             "questions": [

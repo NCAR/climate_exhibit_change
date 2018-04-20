@@ -5,20 +5,20 @@
             "active": true,
             "title": "DIY EARTH",
             "description": "DESCR HERE",
-            "url": "#/apps/diy-earth",
+            "url": "#!/apps/diy-earth",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_change_diyearth.jpg",
                 "width":476,
                 "height":244
             }
         },
-        
+
         {
             "id": 2,
             "active": true,
             "title": "FAQ",
             "description": "",
-            "url": "#/apps/faq",
+            "url": "#!/apps/faq",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_faq.jpg",
                 "width": 475,
@@ -30,7 +30,7 @@
             "active": true,
             "title": "Videos",
             "description": "",
-            "url": "#/videos",
+            "url": "#!/videos",
            "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_change_temperature.jpg",
                 "thumb": "/assets/images/menu/climate_change_temperature-thumb.jpg",
@@ -47,7 +47,7 @@
             "active": true,
             "title": "Climate on Steroids",
             "description": "<p></p>",
-            "url": "#/videos/baseball",
+            "url": "#!/videos/baseball",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_change_baseball.jpg",
                 "thumb": "/assets/images/menu/climate_change_baseball-thumb.jpg",
@@ -62,7 +62,7 @@
             "active": true,
             "title": "Projected Temperature Changes",
             "description": "<p></p>",
-            "url": "#/videos/temperature",
+            "url": "#!/videos/temperature",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_change_temperature.jpg",
                 "thumb": "/assets/images/menu/climate_change_temperature-thumb.jpg",
@@ -77,7 +77,7 @@
             "active": true,
             "title": "Projected Precipitation Changes",
             "description": "<p></p>",
-            "url": "#/videos/precipitation",
+            "url": "#!/videos/precipitation",
             "placeholder": {
                 "image": "/assets/images/menu/posterframes/climate_change_precipitation.jpg",
                 "thumb": "/assets/images/menu/climate_change_precipitation-thumb.jpg",

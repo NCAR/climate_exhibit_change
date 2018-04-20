@@ -34,10 +34,10 @@
         $scope.select = selectFunc;
 
         ContentData('data/climateExplore/climate_explore.json')
-            .success(processData);
+            .then(processData);
 
         function processData(list) {
-            $scope.data = list['data'];
+            $scope.data = list.data['data'];
             $scope.timelineData = $scope.data.timeline_data;
             $scope.selectPeriod($scope.timelineData[4]);
             $scope.diy_combos = $scope.data.diy_temps;

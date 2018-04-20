@@ -11,7 +11,7 @@
         Footer.setBackButton(false);
         WebApp.setDataSource('data/faq.json');
         Footer.setPageTitle("Frequently Asked Questions");
-                       
+
     }
     faqCtrl.$inject = ['$routeParams', 'ContentData','Footer', 'WebApp'];
     function faqCtrl($routeParams, ContentData, Footer, WebApp) {
@@ -19,12 +19,12 @@
         var json = {};
         vm.menuId = $routeParams.menuId;
         vm.itemId = $routeParams.itemId;
-        
+
         ContentData(WebApp.getDataSource())
-            .success(processData);
-        
+            .then(processData);
+
         function processData(list) {
-            vm.data = json = list;
+            vm.data = json = list.data;
 
             if(vm.itemId){
                 var ary = vm.data.categories[vm.menuId].questions;
@@ -46,7 +46,7 @@
                 Footer.setBackButton(true);
                 Footer.setBackButtonText("Back");
                 Footer.setBackPage(json.baseUrl);
-            } else {                
+            } else {
                 Footer.setBackButton(false);
             }
         }

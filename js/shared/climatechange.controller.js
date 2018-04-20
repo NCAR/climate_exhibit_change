@@ -23,7 +23,7 @@
         WebApp.setCols(3);
         WebApp.setHeaderClass("larger");
         WebApp.setDataSource('data/menu_main.json');
-        Footer.setPageTitle("Videos");        
+        Footer.setPageTitle("Videos");
         Footer.setBackButton(false);
     }
 
@@ -34,6 +34,6 @@
         WebApp.setDataSource('data/videos.json');
         Footer.setBackButton(true);
         Footer.setBackButtonText("Videos");
-        Footer.setBackPage("#/videos");
+        Footer.setBackPage("#!/videos");
     };
 })();
